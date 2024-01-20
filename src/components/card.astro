@@ -1,0 +1,34 @@
+---
+interface Props {
+  title: string;
+  href: string;
+  date?: Date;
+  imageUrl?: string;
+}
+
+const { title, date, imageUrl, href } = Astro.props;
+---
+
+<article
+  class="relative overflow-hidden after:absolute after:inset-0 after:z-0 after:rounded-xl after:bg-gradient-to-b after:from-transparent after:to-gray-900/50"
+>
+  <img
+    src={imageUrl}
+    alt="placeholder image for later purposes"
+    width="400"
+    height="400"
+    class="rounded-xl"
+  />
+  <div class="absolute inset-0 z-10 flex flex-col justify-end p-8">
+    {
+      date ? (
+        <time datetime="" class="mb-1 text-gray-200">
+          {date}
+        </time>
+      ) : null
+    }
+    <h3 class="text-xl font-bold">
+      <a href={href} class="text-white after:absolute after:inset-0">{title}</a>
+    </h3>
+  </div>
+</article>

@@ -1,0 +1,153 @@
+---
+import Hero from "@/components/hero.astro";
+import Layout from "@/layout/default.astro";
+
+export function getStaticPaths() {
+  return [
+    {
+      params: { slug: "test" },
+      props: {},
+    },
+  ];
+}
+---
+
+<Layout>
+  <Hero
+    title="Freudiges Ziehen am selben Strang: trinationale Hausbootfahrt 2023"
+    >Trinationale Hausbootfahrt der Regio Lions mit Jugendlichen aus den drei
+    Nachbarländern / Förderung durch die Oberrheinkonferenz
+  </Hero>
+
+  <div class="mx-auto w-2/3">
+    <figure class="-mx-52 mb-12">
+      <img
+        src="https://placehold.co/1000x600"
+        alt="placeholder image for later purposes"
+        width="1000"
+        height="600"
+        class="mb-4 w-full rounded-xl"
+      />
+      <figcaption class="flex">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="mr-2 h-5 w-5 flex-shrink-0 text-gray-400"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z"
+          ></path>
+        </svg>
+
+        <p class="text-sm text-gray-500">
+          Gruppenfoto am Louise Weiss – Brunnen in Saverne. Jugendliche aus der
+          Dreiländerecke durften auf Einladung der Regio Lions eine viertägige
+          gemeinsame Freizeit genießen.
+        </p>
+      </figcaption>
+    </figure>
+
+    <p class="mb-4">
+      „Es war einfach genial!“ – Diesem Fazit stimmten alle Beteiligten zu. Bei
+      der Fahrt auf dem Rhein-Marne-Kanal wurde vier Tage lang ein
+      freundschaftliches Miteinander gepflegt. Die 30 Schlafplätze auf den vier
+      in Niderviller gemieteten Booten waren für Jugendliche im Alter zwischen
+      14 und 18 Jahren aus dem Landkreis Lörrach (7), aus dem Raum Basel (7) und
+      dem Elsass (10) und für Betreuer aus dem Lions Club Weil sowie dem
+      Leo-Club Weil am Rhein gebucht worden.
+    </p>
+
+    <figure class="-mx-32 my-12">
+      <img
+        src="https://placehold.co/500x300"
+        alt="placeholder image for later purposes"
+        width="500"
+        height="300"
+        class="w-full rounded-xl"
+      />
+    </figure>
+
+    <p class="mb-4">
+      Bei 26 Schleusendurchfahrten waren die Jungen und Mädchen beim Halten der
+      Boote gefordert: Mit vereinten Kräften wurde sozusagen am selben Strang
+      gezogen. Ebenso wie beim gemeinsamen Kochen und beim Abwasch zeigte es
+      sich, dass dabei auf jedermann Verlass war.
+    </p>
+
+    <p class="mb-4">
+      Gut kamen die sportliche Betätigung auf einem Outdoor-Fitness-Parcours,
+      ein Abstecher in eine Glasbläserei sowie ein Stadtbummel in Saverne an.
+      Dabei erfuhren die Jugendlichen auch etwas aus dem Leben und Wirken von
+      Louise Weiss, einer Frauenrechtlerin und Kämpferin für ein geeintes
+      Europa. Auch Führungen zur Stadtgeschichte, die von Mitgliedern des Lions
+      Clubs Saverne angeboten wurden, standen auf dem Programm.
+    </p>
+
+    <p class="mb-4">
+      Weil das Freizeitbad in Saverne wegen Renovierungsarbeiten geschlossen
+      hatte, behalf sich die muntere Gruppe bei großer Hitze mehrfach mit
+      Wasserschlachten. Zum Glück verfügten alle Boote über große Wasservorräte
+      und Außenduschen.
+    </p>
+
+    <p class="mb-4">
+      An allen Abenden wurde mit Begeisterung „Werwolf“ gespielt. Und in Saverne
+      konnte ein Freilichtkonzert mit Hip-Hop Battle besucht werden.
+    </p>
+
+    <p>
+      Finanziert wurde die Unternehmung zu etwa gleichen Teilen mit dem Erlös
+      aus dem Festbetrieb beim diesjährigen Dreiländerlauf in Basel und einem
+      Zuschuss aus dem Jugendfonds der Deutsch-Französisch-Schweizerischen
+      Oberrheinkonferenz.
+    </p>
+
+    <figure class="mt-12 grid grid-cols-3 gap-8">
+      <img
+        src="https://placehold.co/500x300"
+        alt="placeholder image for later purposes"
+        width="500"
+        height="300"
+        class="rounded-xl"
+      />
+
+      <img
+        src="https://placehold.co/500x300"
+        alt="placeholder image for later purposes"
+        width="500"
+        height="300"
+        class="rounded-xl"
+      />
+
+      <img
+        src="https://placehold.co/500x300"
+        alt="placeholder image for later purposes"
+        width="500"
+        height="300"
+        class="rounded-xl"
+      />
+
+      <img
+        src="https://placehold.co/500x300"
+        alt="placeholder image for later purposes"
+        width="500"
+        height="300"
+        class="rounded-xl"
+      />
+
+      <img
+        src="https://placehold.co/500x300"
+        alt="placeholder image for later purposes"
+        width="500"
+        height="300"
+        class="rounded-xl"
+      />
+    </figure>
+  </div>
+</Layout>

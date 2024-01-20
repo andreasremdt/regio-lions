@@ -1,7 +1,106 @@
 ---
+import Card from "@/components/card.astro";
+import Hero from "@/components/hero.astro";
 import Layout from "@/layout/default.astro";
 ---
 
 <Layout>
-  <h1 class="text-2xl font-bold">Clubs</h1>
+  <Hero title="Teilnehmende Clubs">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor esse
+    tenetur, blanditiis excepturi minus expedita labore distinctio. Odio cumque
+    maiores aliquid consectetur aliquam labore quidem asperiores magni culpa,
+    amet ut!
+  </Hero>
+
+  <h2 class="mb-8 text-3xl font-black text-gray-900">Schweiz</h2>
+  <div class="grid grid-cols-4 gap-8">
+    <Card
+      title="Lions Club Basel"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+    <Card
+      title="Lions Club Basel-Spalen"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+    <Card
+      title="Lions Club Basel St. Alban"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+    <Card
+      title="Lions Club Dorneck"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+    <Card
+      title="Lions Club Solothurn Leimental"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+    <Card
+      title="Leo Club Basel"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+  </div>
+
+  <h2 class="mb-8 mt-16 text-3xl font-black text-gray-900">Frankreich</h2>
+  <div class="grid grid-cols-4 gap-8">
+    <Card
+      title="Lions Club Altkirch Sundgau"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+    <Card
+      title="Lions Club Mulhouse-Europe"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+    <Card
+      title="Lions Club Saint Louis"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+  </div>
+
+  <h2 class="mb-8 mt-16 text-3xl font-black text-gray-900">Deutschland</h2>
+  <div class="grid grid-cols-4 gap-8">
+    <Card
+      title="Lions Club Bad Säckingen"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+    <Card
+      title="Lions Club Hochschwarzwald"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+    <Card
+      title="Lions Club Lörrach"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+    <Card
+      title="Lions Club Müllheim-Neuenburg"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+    <Card
+      title="Lions Club Schliengen im Markgräflerland"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+    <Card
+      title="Lions Club Weil am Rhein"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+    <Card
+      title="Leo Club Weil am Rhein"
+      href="https://example.org"
+      imageUrl="https://placehold.co/400x400"
+    />
+  </div>
 </Layout>
