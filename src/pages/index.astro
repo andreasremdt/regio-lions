@@ -1,10 +1,11 @@
 ---
+import Card from "@/components/card.astro";
 import Layout from "@/layout/default.astro";
 ---
 
 <Layout>
   <section class="relative py-32">
-    <h1 class="mb-8 w-3/5 text-6xl font-black text-gray-900">
+    <h1 class="h1 mb-8 w-3/5">
       Länderübergreifendes Engagement für Deutschland, Frankreich und die
       Schweiz
     </h1>
@@ -15,9 +16,7 @@ import Layout from "@/layout/default.astro";
       Basel, zu organisieren.
     </p>
     <div>
-      <a
-        href="/news"
-        class="inline-flex h-12 items-center rounded-md bg-gray-900 px-6 font-medium text-white"
+      <a href="/news" class="btn btn-primary"
         >Unsere letzten Aktivitäten &rarr;</a
       >
     </div>
@@ -31,7 +30,7 @@ import Layout from "@/layout/default.astro";
   </section>
 
   <section class="py-48">
-    <h2 class="mb-8 text-5xl font-black text-gray-900">Wer sind wir?</h2>
+    <h2 class="h2 mb-8">Wer sind wir?</h2>
     <div class="flex gap-16">
       <div class="w-3/5">
         <p class="mb-8 text-xl">
@@ -60,17 +59,15 @@ import Layout from "@/layout/default.astro";
 
       <ul class="w-2/5 space-y-8">
         <li class="text-xl">
-          <span class="mb-2 block text-4xl font-bold text-gray-900">17</span>
+          <span class="h3 mb-2 block">17</span>
           teilnehmende Clubs aus den 3 Ländern
         </li>
         <li class="text-xl">
-          <span class="mb-2 block text-4xl font-bold text-gray-900">100</span>
+          <span class="h3 mb-2 block">100</span>
           durchgeführte Aktionen seit Gründung
         </li>
         <li class="text-xl">
-          <span class="mb-2 block text-4xl font-bold text-gray-900"
-            >40.000 €</span
-          >
+          <span class="h3 mb-2 block">40.000 €</span>
           an gesammelten Spenden
         </li>
       </ul>
@@ -86,7 +83,7 @@ import Layout from "@/layout/default.astro";
   />
 
   <section class="py-48">
-    <h2 class="mb-8 text-5xl font-black text-gray-900">Unsere Ziele</h2>
+    <h2 class="h2 mb-8">Unsere Ziele</h2>
     <p class="mb-12 w-1/2 text-xl">
       Wie jede Organisation verfolgen auch wir gewisse Ziele, welche wir mit
       unseren Aktivitäten umsetzen. Diese Ziele definieren und motivieren uns
@@ -95,38 +92,32 @@ import Layout from "@/layout/default.astro";
 
     <ul class="grid grid-cols-3 gap-8">
       <li>
-        <h3 class="mb-2 text-2xl font-bold text-gray-900">Zusammen arbeiten</h3>
+        <h3 class="h3 mb-2">Zusammen arbeiten</h3>
         Kontakte zwischen den Lions Clubs der drei Länder (Deutschland, Frankreich,
         Schweiz) schaffen, verbessern und vereinfachen.
       </li>
       <li>
-        <h3 class="mb-2 text-2xl font-bold text-gray-900">
-          Grenzen überwinden
-        </h3>
+        <h3 class="h3 mb-2">Grenzen überwinden</h3>
         Wie der Lions Club International verfolgen auch wie die Verbesserung der
         Beziehungen zwischen den Völkern.
       </li>
       <li>
-        <h3 class="mb-2 text-2xl font-bold text-gray-900">
-          3-Länderlauf unterstützen
-        </h3>
+        <h3 class="h3 mb-2">3-Länderlauf unterstützen</h3>
         Die Unterstützung des grenzüberschreitenden Volkslaufs nutzen wir als Einnahmequelle,
         um unsere Aktivitäten zu finanzieren.
       </li>
       <li>
-        <h3 class="mb-2 text-2xl font-bold text-gray-900">
-          "Laufend" gutes tun
-        </h3>
+        <h3 class="h3 mb-2">"Laufend" gutes tun</h3>
         Ziel ist es, Menschen aus der Region nicht bloß durch Geldspenden, sondern
         durch selbst durchgeführte Aktivitäten zu unterstützen.
       </li>
       <li>
-        <h3 class="mb-2 text-2xl font-bold text-gray-900">Bekannt machen</h3>
+        <h3 class="h3 mb-2">Bekannt machen</h3>
         Jeder kann helfen und sich engagieren. Mit unserer Arbeit hoffen wir dies
         in der Region bekannt machen zu können.
       </li>
       <li>
-        <h3 class="mb-2 text-2xl font-bold text-gray-900">Kindern helfen</h3>
+        <h3 class="h3 mb-2">Kindern helfen</h3>
         Wir erarbeiten Finanzmittel um ein zweisprachiges, trinationales Ferienlager
         zu Gunsten von Kindern der Region zu finanzieren.
       </li>
@@ -134,80 +125,35 @@ import Layout from "@/layout/default.astro";
   </section>
 
   <section>
-    <h2 class="mb-8 text-5xl font-black text-gray-900">Aktuelle News</h2>
+    <h2 class="h2 mb-8">Aktuelle News</h2>
     <p class="mb-12 w-1/2 text-xl">
       Lesen Sie hier mehr zu unseren aktuellen Aktivitäten und was wir in
       letzter Zeit gemacht haben.
     </p>
 
     <div class="grid grid-cols-3 gap-8">
-      <article
-        class="relative overflow-hidden after:absolute after:inset-0 after:z-0 after:rounded-xl after:bg-gradient-to-b after:from-transparent after:to-gray-900/50"
-      >
-        <img
-          src="https://placehold.co/400x400"
-          alt="placeholder image for later purposes"
-          width="400"
-          height="400"
-          class="rounded-xl"
-        />
-        <div class="absolute inset-0 z-10 flex flex-col justify-end p-8">
-          <time datetime="" class="mb-1 text-gray-200">13. Januar 2023</time>
-          <h3 class="text-xl font-bold">
-            <a href="/news/test" class="text-white after:absolute after:inset-0"
-              >Adventskalender 2023</a
-            >
-          </h3>
-        </div>
-      </article>
-
-      <article
-        class="relative overflow-hidden after:absolute after:inset-0 after:z-0 after:rounded-xl after:bg-gradient-to-b after:from-transparent after:to-gray-900/50"
-      >
-        <img
-          src="https://placehold.co/400x400"
-          alt="placeholder image for later purposes"
-          width="400"
-          height="400"
-          class="rounded-xl"
-        />
-        <div class="absolute inset-0 z-10 flex flex-col justify-end p-8">
-          <time datetime="" class="mb-1 text-gray-200">13. Januar 2023</time>
-          <h3 class="text-xl font-bold">
-            <a href="/news/test" class="text-white after:absolute after:inset-0"
-              >Freudiges Ziehen am selben Strang: trinationale Hausbootfahrt
-              2023
-            </a>
-          </h3>
-        </div>
-      </article>
-
-      <article
-        class="relative overflow-hidden after:absolute after:inset-0 after:z-0 after:rounded-xl after:bg-gradient-to-b after:from-transparent after:to-gray-900/50"
-      >
-        <img
-          src="https://placehold.co/400x400"
-          alt="placeholder image for later purposes"
-          width="400"
-          height="400"
-          class="rounded-xl"
-        />
-        <div class="absolute inset-0 z-10 flex flex-col justify-end p-8">
-          <time datetime="" class="mb-1 text-gray-200">13. Januar 2023</time>
-          <h3 class="text-xl font-bold">
-            <a href="/news/test" class="text-white after:absolute after:inset-0"
-              >3-Länderlauf 2023</a
-            >
-          </h3>
-        </div>
-      </article>
+      <Card
+        title="Adventskalender 2023"
+        date={new Date()}
+        href="/news/test"
+        imageUrl="https://placehold.co/400x400"
+      />
+      <Card
+        title="Freudiges Ziehen am selben Strang: trinationale Hausbootfahrt 2023"
+        date={new Date()}
+        href="/news/test"
+        imageUrl="https://placehold.co/400x400"
+      />
+      <Card
+        title="Adventskalender 2023"
+        date={new Date()}
+        href="/news/test"
+        imageUrl="https://placehold.co/400x400"
+      />
     </div>
 
     <div class="mt-12 text-center">
-      <a
-        href="/news"
-        class="inline-block rounded-md bg-gray-900 px-6 py-3 font-medium text-white"
-      >
+      <a href="/news" class="btn btn-primary">
         Mehr News finden Sie hier &rarr;
       </a>
     </div>
@@ -215,7 +161,7 @@ import Layout from "@/layout/default.astro";
 
   <section class="grid grid-cols-2 gap-16 pt-48">
     <div>
-      <h2 class="mb-8 text-5xl font-black text-gray-900">Unsere Mittel</h2>
+      <h2 class="h2 mb-8">Unsere Mittel</h2>
       <p class="mb-12 text-xl">
         Erfahren Sie mehr über die Bedingungen unserer einzelnen Clubs, damit
         wir als Gemeinschaft Erfolg haben.

@@ -1,5 +1,6 @@
 ---
 import Hero from "@/components/hero.astro";
+import NewsPreview from "@/components/news-preview.astro";
 import Layout from "@/layout/default.astro";
 ---
 
@@ -11,140 +12,45 @@ import Layout from "@/layout/default.astro";
     amet ut!
   </Hero>
 
-  <article class="mb-16 flex gap-x-12">
-    <img
-      src="https://placehold.co/250x250"
-      alt="placeholder image for later purposes"
-      width="250"
-      height="250"
-      class="rounded-xl"
-    />
-    <div>
-      <time datetime="">13. Januar 2023</time>
-      <h2 class="mb-6 mt-1 text-xl font-bold text-gray-900">
-        <a href="/news/test">THis is a convincing title</a>
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quidem
-        error quam temporibus porro soluta magnam animi, exercitationem nesciunt
-        inventore non? Porro sapiente nam quo facere? Rem suscipit dicta iure.
-      </p>
-      <a
-        href="/news"
-        class="mt-6 inline-block rounded-md bg-gray-200 px-6 py-3 font-medium text-gray-900"
-      >
-        Weiterlesen &rarr;
-      </a>
-    </div>
-  </article>
+  <NewsPreview
+    title="Adventskalender 2023"
+    date={new Date()}
+    excerpt="saLorem ipsum dolor sit amet, consectetur adipisicing elit.d Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    href="/news/test"
+    imageUrl="https://placehold.co/400x400"
+  />
 
-  <article class="mb-16 flex gap-x-12">
-    <img
-      src="https://placehold.co/250x250"
-      alt="placeholder image for later purposes"
-      width="250"
-      height="250"
-      class="rounded-xl"
-    />
-    <div>
-      <time datetime="">13. Januar 2023</time>
-      <h2 class="mb-6 mt-1 text-xl font-bold text-gray-900">
-        THis is a convincing title
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quidem
-        error quam temporibus porro soluta magnam animi, exercitationem nesciunt
-        inventore non? Porro sapiente nam quo facere? Rem suscipit dicta iure.
-      </p>
-      <a
-        href="/news"
-        class="mt-6 inline-block rounded-md bg-gray-200 px-6 py-3 font-medium text-gray-900"
-      >
-        Weiterlesen &rarr;
-      </a>
-    </div>
-  </article>
+  <NewsPreview
+    title="Adventskalender 2023"
+    date={new Date()}
+    excerpt="saLorem ipsum dolor sit amet, consectetur adipisicing elit.d Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    href="/news/test"
+    imageUrl="https://placehold.co/400x400"
+  />
 
-  <article class="mb-16 flex gap-x-12">
-    <img
-      src="https://placehold.co/250x250"
-      alt="placeholder image for later purposes"
-      width="250"
-      height="250"
-      class="rounded-xl"
-    />
-    <div>
-      <time datetime="">13. Januar 2023</time>
-      <h2 class="mb-6 mt-1 text-xl font-bold text-gray-900">
-        THis is a convincing title
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quidem
-        error quam temporibus porro soluta magnam animi, exercitationem nesciunt
-        inventore non? Porro sapiente nam quo facere? Rem suscipit dicta iure.
-      </p>
-      <a
-        href="/news"
-        class="mt-6 inline-block rounded-md bg-gray-200 px-6 py-3 font-medium text-gray-900"
-      >
-        Weiterlesen &rarr;
-      </a>
-    </div>
-  </article>
+  <NewsPreview
+    title="Adventskalender 2023"
+    date={new Date()}
+    excerpt="saLorem ipsum dolor sit amet, consectetur adipisicing elit.d Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    href="/news/test"
+    imageUrl="https://placehold.co/400x400"
+  />
 
-  <article class="mb-16 flex gap-x-12">
-    <img
-      src="https://placehold.co/250x250"
-      alt="placeholder image for later purposes"
-      width="250"
-      height="250"
-      class="rounded-xl"
-    />
-    <div>
-      <time datetime="">13. Januar 2023</time>
-      <h2 class="mb-6 mt-1 text-xl font-bold text-gray-900">
-        THis is a convincing title
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quidem
-        error quam temporibus porro soluta magnam animi, exercitationem nesciunt
-        inventore non? Porro sapiente nam quo facere? Rem suscipit dicta iure.
-      </p>
-      <a
-        href="/news"
-        class="mt-6 inline-block rounded-md bg-gray-200 px-6 py-3 font-medium text-gray-900"
-      >
-        Weiterlesen &rarr;
-      </a>
-    </div>
-  </article>
+  <NewsPreview
+    title="Adventskalender 2023"
+    date={new Date()}
+    excerpt="saLorem ipsum dolor sit amet, consectetur adipisicing elit.d Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    href="/news/test"
+    imageUrl="https://placehold.co/400x400"
+  />
 
-  <article class="mb-16 flex gap-x-12">
-    <img
-      src="https://placehold.co/250x250"
-      alt="placeholder image for later purposes"
-      width="250"
-      height="250"
-      class="rounded-xl"
-    />
-    <div>
-      <time datetime="">13. Januar 2023</time>
-      <h2 class="mb-6 mt-1 text-xl font-bold text-gray-900">
-        THis is a convincing title
-      </h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quidem
-        error quam temporibus porro soluta magnam animi, exercitationem nesciunt
-        inventore non? Porro sapiente nam quo facere? Rem suscipit dicta iure.
-      </p>
-      <a
-        href="/news"
-        class="mt-6 inline-block rounded-md bg-gray-200 px-6 py-3 font-medium text-gray-900"
-      >
-        Weiterlesen &rarr;
-      </a>
-    </div>
-  </article>
+  <NewsPreview
+    title="Adventskalender 2023"
+    date={new Date()}
+    excerpt="saLorem ipsum dolor sit amet, consectetur adipisicing elit.d Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    href="/news/test"
+    imageUrl="https://placehold.co/400x400"
+  />
 
   <nav class="flex justify-center gap-x-1">
     <a
