@@ -5,13 +5,13 @@ import Layout from "@/layout/default.astro";
 
 <Layout>
   <section
-    class="relative py-32 before:absolute before:bottom-32 before:right-0 before:-z-10 before:aspect-square before:w-64 before:rounded-full before:bg-fuchsia-100 before:blur-3xl after:absolute after:-bottom-48 after:right-32 after:-z-10 after:aspect-square after:w-72 after:rounded-full after:bg-purple-100 after:blur-3xl"
+    class="relative py-16 before:absolute before:bottom-32 before:right-0 before:-z-10 before:aspect-square before:w-64 before:rounded-full before:bg-fuchsia-100 before:blur-3xl after:absolute after:-bottom-48 after:right-32 after:-z-10 after:aspect-square after:w-72 after:rounded-full after:bg-purple-100 after:blur-3xl md:py-32"
   >
-    <h1 class="h1 mb-8 w-3/5">
+    <h1 class="h1 mb-8 md:w-3/5">
       Länderübergreifendes Engagement für Deutschland, Frankreich und die
       Schweiz
     </h1>
-    <p class="mb-8 w-1/2 text-xl">
+    <p class="mb-8 text-xl sm:w-2/3 md:w-1/2">
       Regio Lions ist ein Verbund von mehreren Lions Clubs aus dem Dreiländereck
       Deutschland, Schweiz und Frankreich mit dem Ziel, gemeinsame Aktivities,
       wie z. B. den 3-Länderlauf oder einen Stand bei "Em Bebbi sy Jazz!" in
@@ -21,7 +21,9 @@ import Layout from "@/layout/default.astro";
       Unsere letzten Aktivitäten &rarr;
     </a>
 
-    <div class="absolute right-0 top-12 flex w-2/5 gap-8">
+    <div
+      class="right-0 mt-8 flex gap-8 md:absolute md:top-40 md:mt-0 md:w-2/5 lg:top-12"
+    >
       <div class="pt-72">
         <img
           src="https://placehold.co/200x350"
@@ -66,10 +68,10 @@ import Layout from "@/layout/default.astro";
     </div>
   </section>
 
-  <section class="py-48">
+  <section class="py-16 md:py-32 lg:py-48">
     <h2 class="h2 mb-8">Wer sind wir?</h2>
-    <div class="flex gap-16">
-      <div class="w-3/5">
+    <div class="flex flex-col gap-8 md:flex-row md:gap-16">
+      <div class="md:w-3/5">
         <p class="mb-8 text-xl">
           Lions Clubs International ist eine weltweite Vereinigung freier
           Menschen, die in freundschaftlicher Verbundenheit bereit sind, sich
@@ -94,17 +96,17 @@ import Layout from "@/layout/default.astro";
         </p>
       </div>
 
-      <ul class="w-2/5 space-y-8">
-        <li class="text-xl">
-          <span class="h3 mb-2 block">17</span>
+      <ul class="space-y-8 md:w-2/5">
+        <li class="md:text-xl">
+          <span class="h3 block md:mb-2">17</span>
           teilnehmende Clubs aus den 3 Ländern
         </li>
-        <li class="text-xl">
-          <span class="h3 mb-2 block">100</span>
+        <li class="md:text-xl">
+          <span class="h3 block md:mb-2">100</span>
           durchgeführte Aktionen seit Gründung
         </li>
-        <li class="text-xl">
-          <span class="h3 mb-2 block">40.000 €</span>
+        <li class="md:text-xl">
+          <span class="h3 block md:mb-2">40.000 €</span>
           an gesammelten Spenden
         </li>
       </ul>
@@ -119,15 +121,15 @@ import Layout from "@/layout/default.astro";
     class="w-full rounded-xl shadow-lg"
   />
 
-  <section class="py-48">
+  <section class="py-16 md:py-32 lg:py-48">
     <h2 class="h2 mb-8">Unsere Ziele</h2>
-    <p class="mb-12 w-1/2 text-xl">
+    <p class="mb-12 text-xl md:w-2/3 lg:w-1/2">
       Wie jede Organisation verfolgen auch wir gewisse Ziele, welche wir mit
       unseren Aktivitäten umsetzen. Diese Ziele definieren und motivieren uns
       für den ehrenamtlichen Einsatz.
     </p>
 
-    <ul class="grid grid-cols-3 gap-8">
+    <ul class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <li>
         <h3 class="h3 mb-2">Zusammen arbeiten</h3>
         Kontakte zwischen den Lions Clubs der drei Länder (Deutschland, Frankreich,
@@ -163,12 +165,12 @@ import Layout from "@/layout/default.astro";
 
   <section>
     <h2 class="h2 mb-8">Aktuelle News</h2>
-    <p class="mb-12 w-1/2 text-xl">
+    <p class="mb-12 text-xl md:w-2/3 lg:w-1/2">
       Lesen Sie hier mehr zu unseren aktuellen Aktivitäten und was wir in
       letzter Zeit gemacht haben.
     </p>
 
-    <div class="grid grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
       <Card
         title="Adventskalender 2023"
         date={new Date()}
@@ -196,13 +198,14 @@ import Layout from "@/layout/default.astro";
     </div>
   </section>
 
-  <section class="grid grid-cols-2 gap-16 pt-48">
-    <div>
-      <h2 class="h2 mb-8">Unsere Mittel</h2>
-      <p class="mb-12 text-xl">
-        Erfahren Sie mehr über die Bedingungen unserer einzelnen Clubs, damit
-        wir als Gemeinschaft Erfolg haben.
-      </p>
+  <section class="pt-16 md:pt-32 lg:pt-48">
+    <h2 class="h2 mb-8">Unsere Mittel</h2>
+    <p class="mb-12 text-xl md:w-2/3 lg:w-1/2">
+      Erfahren Sie mehr über die Bedingungen unserer einzelnen Clubs, damit wir
+      als Gemeinschaft Erfolg haben.
+    </p>
+
+    <div class="grid grid-cols-1 gap-16 md:grid-cols-2">
       <img
         src="https://placehold.co/500x600"
         alt="placeholder image for later purposes"
@@ -210,33 +213,33 @@ import Layout from "@/layout/default.astro";
         height="600"
         class="rounded-xl shadow-lg"
       />
-    </div>
 
-    <ul class="mt-64 list-disc space-y-6">
-      <li>
-        Jeder Lions Club beteiligt sich mit 500€ am Sponsoring oder Patronat des
-        3-Länderlaufes.
-      </li>
-      <li>
-        Die Organisation des Rennens zahlt den Regio Lions einen Betrag von 2
-        CHF pro Teilnehmer zurück.
-      </li>
-      <li>
-        Am Tag des Laufes befindet sich ein Ausschank-Stand auf dem
-        Basler-Marktplatz.
-      </li>
-      <li>
-        Es gibt 1 - 2 Regio-Beauftragte pro Club. Am besten bleiben sie mehrere
-        Jahre in ihrem Amt.
-      </li>
-      <li>
-        Der 3-Länderlauf ist ebenfalls ein Spenden-Lauf. Jeder Teilnehmer darf
-        auch mehr als sein Anmeldungsgeld entrichten.
-      </li>
-      <li>
-        Wenn ein neuer Sponsor dank einem Lions-Mitglied gefunden wird, kommt
-        20% des Betrages zu Gunsten der Regio Lions.
-      </li>
-    </ul>
+      <ul class="ml-4 list-disc space-y-6 lg:mt-16">
+        <li>
+          Jeder Lions Club beteiligt sich mit 500€ am Sponsoring oder Patronat
+          des 3-Länderlaufes.
+        </li>
+        <li>
+          Die Organisation des Rennens zahlt den Regio Lions einen Betrag von 2
+          CHF pro Teilnehmer zurück.
+        </li>
+        <li>
+          Am Tag des Laufes befindet sich ein Ausschank-Stand auf dem
+          Basler-Marktplatz.
+        </li>
+        <li>
+          Es gibt 1 - 2 Regio-Beauftragte pro Club. Am besten bleiben sie
+          mehrere Jahre in ihrem Amt.
+        </li>
+        <li>
+          Der 3-Länderlauf ist ebenfalls ein Spenden-Lauf. Jeder Teilnehmer darf
+          auch mehr als sein Anmeldungsgeld entrichten.
+        </li>
+        <li>
+          Wenn ein neuer Sponsor dank einem Lions-Mitglied gefunden wird, kommt
+          20% des Betrages zu Gunsten der Regio Lions.
+        </li>
+      </ul>
+    </div>
   </section>
 </Layout>

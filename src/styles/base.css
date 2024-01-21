@@ -24,30 +24,18 @@
   }
 
   .h1 {
-    @apply text-6xl font-black leading-none text-gray-900;
+    @apply text-4xl font-black leading-none text-gray-900 md:text-5xl lg:text-6xl;
   }
 
   .h2 {
-    @apply text-5xl font-black leading-none text-gray-900;
+    @apply text-3xl font-black leading-none text-gray-900 md:text-4xl lg:text-5xl;
   }
 
   .h3 {
-    @apply text-2xl font-bold leading-tight text-gray-900;
+    @apply text-xl font-bold leading-tight text-gray-900 md:text-2xl;
   }
 
   .h4 {
-    @apply text-xl font-bold leading-tight text-gray-900;
-  }
-
-  .bg-test::after {
-    content: "";
-    position: absolute;
-    width: 200px;
-    aspect-ratio: 1;
-    background-color: red;
-    border-radius: 50%;
-    filter: blur(100px);
-    z-index: -10;
-    opacity: 0.5;
+    @apply text-lg font-bold leading-tight text-gray-900 lg:text-xl;
   }
 }

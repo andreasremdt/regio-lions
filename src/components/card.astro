@@ -1,4 +1,6 @@
 ---
+import { formatDate } from "@/lib/utils";
+
 interface Props {
   title: string;
   href: string;
@@ -10,20 +12,20 @@ const { title, date, imageUrl, href } = Astro.props;
 ---
 
 <article
-  class="relative overflow-hidden shadow-lg after:absolute after:inset-0 after:z-0 after:rounded-xl after:bg-gradient-to-b after:from-transparent after:to-gray-900/50"
+  class="relative shadow-lg after:absolute after:inset-0 after:z-0 after:rounded-xl after:bg-gradient-to-b after:from-transparent after:to-gray-900/50"
 >
   <img
     src={imageUrl}
     alt="placeholder image for later purposes"
     width="400"
     height="400"
-    class="rounded-xl"
+    class="max-h-72 w-full rounded-xl object-cover sm:max-h-none"
   />
-  <div class="absolute inset-0 z-10 flex flex-col justify-end p-8">
+  <div class="absolute inset-0 z-10 flex flex-col justify-end p-4 md:p-8">
     {
       date ? (
-        <time datetime="" class="mb-1 text-gray-200">
-          {date}
+        <time datetime={date.toISOString()} class="mb-1 text-gray-200">
+          {formatDate(date)}
         </time>
       ) : null
     }

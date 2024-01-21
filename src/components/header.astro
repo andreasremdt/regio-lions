@@ -1,5 +1,5 @@
 <header
-  class="relative mx-auto flex max-w-7xl items-center justify-between px-8 py-8 before:absolute before:-top-1/2 before:bottom-32 before:right-0 before:-z-10 before:aspect-square before:w-48 before:rounded-full before:bg-purple-100 before:blur-3xl"
+  class="relative mx-auto flex max-w-7xl items-center justify-between px-4 py-4 before:absolute before:-top-1/2 before:bottom-32 before:right-0 before:-z-10 before:aspect-square before:w-48 before:rounded-full before:bg-purple-100 before:blur-3xl md:px-8 md:py-8"
 >
   <img
     src="https://placehold.co/200x75"
@@ -8,12 +8,47 @@
     height="75"
   />
 
-  <nav class="space-x-8">
-    <a class="font-medium" href="/">Home</a>
-    <a class="font-medium" href="/news">News</a>
-    <a class="font-medium" href="/clubs">Clubs</a>
+  <button
+    type="button"
+    aria-label="öffne das hauptmenü"
+    aria-live="polite"
+    aria-controls="menu"
+    aria-expanded="false"
+    data-action="toggle-menu"
+    class="md:hidden"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      aria-hidden="true"
+      stroke="currentColor"
+      class="relative z-20 h-10 w-10 text-gray-900"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="hidden"
+        d="M6 18 18 6M6 6l12 12"></path>
+    </svg>
+  </button>
+
+  <nav
+    class="pointer-events-none fixed inset-0 z-10 flex h-screen w-full flex-col justify-center gap-8 bg-white p-12 text-xl opacity-0 transition-opacity md:pointer-events-auto md:static md:h-auto md:w-auto md:flex-row md:bg-transparent md:p-0 md:text-base md:opacity-100"
+    data-action="menu"
+    id="menu"
+  >
+    <a class="font-medium text-gray-900" tabindex="0" href="/">Home</a>
+    <a class="font-medium text-gray-900" tabindex="0" href="/news">News</a>
+    <a class="font-medium text-gray-900" tabindex="0" href="/clubs">Clubs</a>
     <a
-      class="inline-flex items-center gap-x-2 font-medium"
+      class="inline-flex items-center gap-x-2 font-medium text-gray-900"
+      tabindex="0"
       href="https://www.3laenderlauf.org/"
       target="_blank"
       rel="noopener nofollow noreferrer"
@@ -34,6 +69,84 @@
         ></path>
       </svg></a
     >
-    <a class="font-medium" href="/kontakt">Kontakt</a>
+    <a class="font-medium text-gray-900" href="/kontakt" tabindex="0">Kontakt</a
+    >
   </nav>
 </header>
+
+<script>
+  let toggle = document.querySelector(
+    '[data-action="toggle-menu"]',
+  ) as HTMLButtonElement;
+  let menu = document.querySelector('[data-action="menu"]') as HTMLDivElement;
+  let [open, close] = toggle.querySelectorAll(
+    "path",
+  ) as NodeListOf<SVGPathElement>;
+  let links = menu.querySelectorAll("a") as NodeListOf<HTMLAnchorElement>;
+  let mediaQuery = window.matchMedia("(max-width: 768px)");
+  let firstLink = links[0];
+  let lastLink = links[links.length - 1];
+  let menuVisible = false;
+
+  function handleMenuToggle() {
+    menuVisible = !menuVisible;
+
+    menu.ariaHidden = String(!menuVisible);
+    toggle.ariaExpanded = String(menuVisible);
+    toggle.ariaLabel = `${menuVisible ? "schließe" : "öffne"} das hauptmenü`;
+    links.forEach((link) => (link.tabIndex = menuVisible ? 0 : -1));
+
+    if (menuVisible) {
+      menu.classList.remove("opacity-0", "pointer-events-none");
+
+      open.classList.add("hidden");
+      close.classList.remove("hidden");
+      document.body.classList.add("overflow-y-hidden");
+      firstLink.focus();
+    } else {
+      menu.classList.add("opacity-0", "pointer-events-none");
+      open.classList.remove("hidden");
+      close.classList.add("hidden");
+      document.body.classList.remove("overflow-y-hidden");
+      toggle.focus();
+    }
+  }
+
+  function handleFocusTrap(event: KeyboardEvent) {
+    if (event.shiftKey) {
+      if (document.activeElement === toggle) {
+        event.preventDefault();
+        lastLink.focus();
+      }
+    } else if (document.activeElement === lastLink) {
+      event.preventDefault();
+      toggle.focus();
+    }
+  }
+
+  function handleKeyDown(event: KeyboardEvent) {
+    if (event.key === "Escape" && menuVisible) {
+      handleMenuToggle();
+    }
+
+    if (event.key === "Tab" && menuVisible) {
+      handleFocusTrap(event);
+    }
+  }
+
+  function handleMediaChange(event: MediaQueryListEvent | MediaQueryList) {
+    console.log("test", event.matches);
+    if (event.matches) {
+      toggle.ariaExpanded = String(menuVisible);
+      links.forEach((link) => (link.tabIndex = menuVisible ? 0 : -1));
+    } else {
+      links.forEach((link) => (link.tabIndex = 0));
+    }
+  }
+
+  toggle.addEventListener("click", handleMenuToggle);
+  document.addEventListener("keydown", handleKeyDown);
+  mediaQuery.addEventListener("change", handleMediaChange);
+
+  handleMediaChange(mediaQuery);
+</script>
