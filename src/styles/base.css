@@ -20,7 +20,7 @@
   }
 
   .textbox {
-    @apply h-12 w-full rounded-md border border-gray-300 px-4;
+    @apply h-12 w-full rounded-md border border-gray-300 px-4 shadow-sm;
   }
 
   .h1 {
