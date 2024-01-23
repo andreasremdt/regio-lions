@@ -91,9 +91,12 @@
   function handleMenuToggle() {
     menuVisible = !menuVisible;
 
-    menu.ariaHidden = String(!menuVisible);
-    toggle.ariaExpanded = String(menuVisible);
-    toggle.ariaLabel = `${menuVisible ? "schließe" : "öffne"} das hauptmenü`;
+    menu.setAttribute("aria-hidden", String(!menuVisible));
+    toggle.setAttribute("aria-expanded", String(menuVisible));
+    toggle.setAttribute(
+      "aria-label",
+      `${menuVisible ? "schließe" : "öffne"} das hauptmenü`,
+    );
     links.forEach((link) => (link.tabIndex = menuVisible ? 0 : -1));
 
     if (menuVisible) {
@@ -135,9 +138,8 @@
   }
 
   function handleMediaChange(event: MediaQueryListEvent | MediaQueryList) {
-    console.log("test", event.matches);
     if (event.matches) {
-      toggle.ariaExpanded = String(menuVisible);
+      toggle.setAttribute("aria-expanded", String(menuVisible));
       links.forEach((link) => (link.tabIndex = menuVisible ? 0 : -1));
     } else {
       links.forEach((link) => (link.tabIndex = 0));

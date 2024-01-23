@@ -12,7 +12,7 @@ import Layout from "@/layout/default.astro";
   </Hero>
 
   <div class="flex flex-col gap-x-12 lg:flex-row">
-    <form action="" method="post" class="lg:w-2/3">
+    <form action="" method="post" class="lg:w-2/3" data-form>
       <div class="mb-4 flex flex-col gap-4 sm:flex-row md:mb-8 md:gap-8">
         <div class="sm:w-1/2">
           <label for="firstname" class="label">Vorname</label>
@@ -21,6 +21,8 @@ import Layout from "@/layout/default.astro";
             id="firstname"
             name="firstname"
             required
+            autocomplete="given-name"
+            data-error="Bitte geben Sie Ihren Vornamen an."
             class="textbox"
           />
         </div>
@@ -32,6 +34,8 @@ import Layout from "@/layout/default.astro";
             id="lastname"
             name="lastname"
             required
+            autocomplete="family-name"
+            data-error="Bitte geben Sie Ihren Nachnamen an."
             class="textbox"
           />
         </div>
@@ -45,6 +49,8 @@ import Layout from "@/layout/default.astro";
             id="email"
             name="email"
             required
+            data-error="Bitte geben Sie eine gültige E-Mail-Adresse an."
+            autocomplete="email"
             class="textbox"
           />
         </div>
@@ -55,16 +61,26 @@ import Layout from "@/layout/default.astro";
               >optional</span
             ></label
           >
-          <input type="text" id="phone" name="phone" class="textbox" />
+          <input
+            type="text"
+            id="phone"
+            name="phone"
+            autocomplete="tel"
+            class="textbox"
+          />
         </div>
       </div>
 
-      <label for="message" class="label">Ihre Nachricht</label>
-      <textarea
-        name="message"
-        id="message"
-        required
-        class="textbox mb-4 h-32 resize-y px-4 py-2 md:mb-8"></textarea>
+      <div class="mb-4 md:mb-8">
+        <label for="message" class="label">Ihre Nachricht</label>
+        <textarea
+          name="message"
+          id="message"
+          required
+          minlength="10"
+          data-error="Bitte schreiben Sie mindestens 10 Zeichen."
+          class="textbox min-h-32 resize-y px-4 py-2 align-middle"></textarea>
+      </div>
 
       <button type="submit" class="btn btn-primary">Nachricht senden</button>
     </form>
@@ -93,3 +109,70 @@ import Layout from "@/layout/default.astro";
     </div>
   </div>
 </Layout>
+
+<script>
+  let form = document.querySelector("[data-form]") as HTMLFormElement;
+  let inputs = form.querySelectorAll(
+    "input, textarea",
+  ) as NodeListOf<HTMLInputElement>;
+  let button = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+
+  form.setAttribute("novalidate", "novalidate");
+  form.setAttribute("aria-assertive", "polite");
+
+  function validate(input: HTMLInputElement) {
+    if (!input.checkValidity() && !input.hasAttribute("aria-invalid")) {
+      let error = document.createElement("p");
+
+      error.setAttribute("id", `${input.name}-error`);
+      error.setAttribute("aria-live", "assertive");
+      error.classList.add("text-red-500", "text-sm", "mt-1");
+      error.textContent = input.getAttribute("data-error");
+
+      input.setAttribute("aria-invalid", "true");
+      input.setAttribute("aria-describedby", `${input.name}-error`);
+      input.insertAdjacentElement("afterend", error);
+    } else if (input.checkValidity() && input.hasAttribute("aria-invalid")) {
+      input.nextElementSibling?.remove();
+      input.removeAttribute("aria-invalid");
+      input.removeAttribute("aria-describedby");
+    }
+  }
+
+  function handleSubmit(event: SubmitEvent) {
+    event.preventDefault();
+
+    inputs.forEach(validate);
+
+    let firstInvalid = form.querySelector<HTMLInputElement>(
+      '[aria-invalid="true"]',
+    );
+
+    if (firstInvalid) {
+      firstInvalid.focus();
+    } else {
+      console.log("send email");
+    }
+  }
+
+  function handleBlur(event: FocusEvent) {
+    let input = event.target as HTMLInputElement;
+
+    validate(input);
+  }
+
+  function handleInput(event: Event) {
+    let input = event.target as HTMLInputElement;
+
+    if (input.getAttribute("aria-invalid") === "true") {
+      validate(input);
+    }
+  }
+
+  form.addEventListener("submit", handleSubmit);
+
+  for (let input of inputs) {
+    input.addEventListener("blur", handleBlur);
+    input.addEventListener("input", handleInput);
+  }
+</script>
