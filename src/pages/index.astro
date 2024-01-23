@@ -1,10 +1,16 @@
 ---
+import { Image } from "astro:assets";
 import Card from "@/components/card.astro";
 import Layout from "@/layout/default.astro";
 
 import lionsClubBasel from "@/images/lions-club-basel.jpg";
 import lionsClubBaselSpalen from "@/images/lions-club-basel-spalen.jpg";
 import lionsClubBaselStAlban from "@/images/lions-club-basel-st-alban.jpg";
+import frontPage1 from "@/images/front-page-1.jpg";
+import frontPage2 from "@/images/front-page-2.jpg";
+import frontPage3 from "@/images/front-page-3.jpg";
+import frontPage4 from "@/images/front-page-4.jpg";
+import frontPage5 from "@/images/front-page-5.jpg";
 ---
 
 <Layout>
@@ -29,43 +35,38 @@ import lionsClubBaselStAlban from "@/images/lions-club-basel-st-alban.jpg";
       class="right-0 mt-8 flex gap-8 md:absolute md:top-40 md:mt-0 md:w-2/5 lg:top-12"
     >
       <div class="pt-72">
-        <img
-          src="https://placehold.co/200x350"
-          class="rounded-xl shadow-lg"
+        <Image
+          src={frontPage1}
+          class="aspect-[1/1.5] rounded-xl object-cover shadow-lg"
           alt="placeholder image for later purposes"
-          width="200"
           height="350"
         />
       </div>
       <div class="pt-40">
-        <img
-          src="https://placehold.co/200x350"
-          class="mb-8 rounded-xl shadow-lg"
+        <Image
+          src={frontPage2}
+          class="mb-8 aspect-[1/1.5] rounded-xl object-cover shadow-lg"
           alt="placeholder image for later purposes"
-          width="200"
           height="350"
         />
-        <img
-          src="https://placehold.co/200x350"
-          class="rounded-xl shadow-lg"
+        <Image
+          src={frontPage3}
+          class="aspect-[1/1.5] rounded-xl object-cover shadow-lg"
           alt="placeholder image for later purposes"
-          width="200"
           height="350"
         />
       </div>
       <div>
-        <img
-          src="https://placehold.co/200x350"
-          class="mb-8 rounded-xl shadow-lg"
+        <Image
+          src={frontPage4}
+          class="mb-8 aspect-[1/1.5] rounded-xl object-cover shadow-lg"
           alt="placeholder image for later purposes"
-          width="200"
           height="350"
         />
-        <img
-          src="https://placehold.co/200x350"
-          class="rounded-xl shadow-lg"
+        <Image
+          src={frontPage5}
+          class="aspect-[1/1.5] rounded-xl object-cover shadow-lg"
           alt="placeholder image for later purposes"
-          width="200"
           height="350"
         />
       </div>
@@ -117,12 +118,12 @@ import lionsClubBaselStAlban from "@/images/lions-club-basel-st-alban.jpg";
     </div>
   </section>
 
-  <img
-    src="https://placehold.co/1200x450"
+  <Image
+    src={frontPage4}
     alt="placeholder image for later purposes"
     width="1200"
     height="450"
-    class="w-full rounded-xl shadow-lg"
+    class="max-h-[450px] w-full rounded-xl object-cover object-top shadow-lg"
   />
 
   <section class="py-16 md:py-32 lg:py-48">
@@ -210,12 +211,12 @@ import lionsClubBaselStAlban from "@/images/lions-club-basel-st-alban.jpg";
     </p>
 
     <div class="grid grid-cols-1 gap-16 md:grid-cols-2">
-      <img
-        src="https://placehold.co/500x600"
+      <Image
+        src={frontPage1}
         alt="placeholder image for later purposes"
         width="500"
         height="600"
-        class="rounded-xl shadow-lg"
+        class="h-full rounded-xl object-cover shadow-lg"
       />
 
       <ul class="ml-4 list-disc space-y-6 lg:mt-16">

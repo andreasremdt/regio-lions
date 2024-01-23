@@ -1,6 +1,9 @@
 ---
+import { Image } from "astro:assets";
 import Hero from "@/components/hero.astro";
 import Layout from "@/layout/default.astro";
+
+import hausbootfahrt from "@/images/hausbootfahrt.jpeg";
 
 export function getStaticPaths() {
   return [
@@ -21,8 +24,8 @@ export function getStaticPaths() {
 
   <div class="mx-auto md:w-2/3">
     <figure class="mb-12 md:-mx-24 xl:-mx-52">
-      <img
-        src="https://placehold.co/1000x600"
+      <Image
+        src={hausbootfahrt}
         alt="placeholder image for later purposes"
         width="1000"
         height="600"
