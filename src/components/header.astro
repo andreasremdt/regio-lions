@@ -1,12 +1,21 @@
+---
+import { Image } from "astro:assets";
+import logo from "@/images/logo.png";
+---
+
 <header
   class="relative mx-auto flex max-w-7xl items-center justify-between px-4 py-4 before:absolute before:-top-1/2 before:bottom-32 before:right-0 before:-z-10 before:aspect-square before:w-48 before:rounded-full before:bg-purple-100 before:blur-3xl md:px-8 md:py-8"
 >
-  <img
-    src="https://placehold.co/200x75"
-    alt="logo der region lions"
-    width="200"
-    height="75"
-  />
+  <a href="/">
+    <Image
+      src={logo}
+      alt="logo der region lions"
+      width="250"
+      height="194"
+      loading="eager"
+      class="w-24 md:w-32"
+    />
+  </a>
 
   <button
     type="button"
