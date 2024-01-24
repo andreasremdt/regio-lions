@@ -6,7 +6,10 @@ import logo from "@/images/logo.png";
 <header
   class="relative mx-auto flex max-w-7xl items-center justify-between px-4 py-4 before:absolute before:-top-1/2 before:bottom-32 before:right-0 before:-z-10 before:aspect-square before:w-48 before:rounded-full before:bg-purple-100 before:blur-3xl md:px-8 md:py-8"
 >
-  <a href="/">
+  <a
+    href="/"
+    class="rounded-md focus-visible:bg-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+  >
     <Image
       src={logo}
       alt="logo der region lions"
@@ -52,11 +55,23 @@ import logo from "@/images/logo.png";
     data-action="menu"
     id="menu"
   >
-    <a class="font-medium text-gray-900" tabindex="0" href="/">Home</a>
-    <a class="font-medium text-gray-900" tabindex="0" href="/news">News</a>
-    <a class="font-medium text-gray-900" tabindex="0" href="/clubs">Clubs</a>
     <a
-      class="inline-flex items-center gap-x-2 font-medium text-gray-900"
+      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
+      tabindex="0"
+      href="/">Home</a
+    >
+    <a
+      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
+      tabindex="0"
+      href="/news">News</a
+    >
+    <a
+      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
+      tabindex="0"
+      href="/clubs">Clubs</a
+    >
+    <a
+      class="inline-flex items-center gap-x-2 rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
       tabindex="0"
       href="https://www.3laenderlauf.org/"
       target="_blank"
@@ -78,7 +93,10 @@ import logo from "@/images/logo.png";
         ></path>
       </svg></a
     >
-    <a class="font-medium text-gray-900" href="/kontakt" tabindex="0">Kontakt</a
+    <a
+      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
+      href="/kontakt"
+      tabindex="0">Kontakt</a
     >
   </nav>
 </header>

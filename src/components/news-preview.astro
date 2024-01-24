@@ -31,7 +31,11 @@ const { title, date, image, excerpt, href } = Astro.props;
       >{formatDate(date)}</time
     >
     <h2 class="h4 mb-6 mt-1">
-      <a href={href}>{title}</a>
+      <a
+        href={href}
+        class="rounded-sm transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
+        >{title}</a
+      >
     </h2>
     <p>
       {excerpt}
