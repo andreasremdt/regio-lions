@@ -27,7 +27,7 @@ import logo from "@/images/logo.png";
     aria-controls="menu"
     aria-expanded="false"
     data-action="toggle-menu"
-    class="md:hidden"
+    class="z-20 rounded-sm text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900 md:hidden"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +36,7 @@ import logo from "@/images/logo.png";
       stroke-width="1.5"
       aria-hidden="true"
       stroke="currentColor"
-      class="relative z-20 h-10 w-10 text-gray-900"
+      class="z-20 h-10 w-10"
     >
       <path
         stroke-linecap="round"
@@ -155,12 +155,14 @@ import logo from "@/images/logo.png";
   }
 
   function handleKeyDown(event: KeyboardEvent) {
-    if (event.key === "Escape" && menuVisible) {
-      handleMenuToggle();
-    }
+    if (menuVisible) {
+      if (event.key === "Escape") {
+        handleMenuToggle();
+      }
 
-    if (event.key === "Tab" && menuVisible) {
-      handleFocusTrap(event);
+      if (event.key === "Tab") {
+        handleFocusTrap(event);
+      }
     }
   }
 
