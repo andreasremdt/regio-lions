@@ -158,11 +158,15 @@ import Layout from "@/layout/default.astro";
   function handleBlur(event: FocusEvent) {
     let input = event.target as HTMLInputElement;
 
-    validate(input);
+    if (input.hasAttribute("data-touched")) {
+      validate(input);
+    }
   }
 
   function handleInput(event: Event) {
     let input = event.target as HTMLInputElement;
+
+    input.setAttribute("data-touched", "true");
 
     if (input.getAttribute("aria-invalid") === "true") {
       validate(input);
