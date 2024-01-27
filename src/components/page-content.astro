@@ -1,0 +1,16 @@
+---
+import type { PageContent } from "@/types/storyblok";
+import { storyblokEditable, renderRichText } from "@storyblok/astro";
+
+interface Props {
+  blok: PageContent;
+}
+
+const { blok } = Astro.props;
+---
+
+<div
+  class="prose max-w-none md:w-2/3"
+  {...storyblokEditable(blok)}
+  set:html={renderRichText(blok.content)}
+/>

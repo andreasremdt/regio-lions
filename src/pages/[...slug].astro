@@ -1,0 +1,23 @@
+---
+import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
+import Layout from "@/layout/default.astro";
+import { getAllLinks, getPage } from "@/lib/storyblok";
+
+const { slug } = Astro.params;
+
+export async function getStaticPaths() {
+  const links = await getAllLinks();
+
+  return links.map((link) => ({
+    params: {
+      slug: link.slug === "home" ? undefined : link.slug,
+    },
+  }));
+}
+
+const story = await getPage(slug);
+---
+
+<Layout>
+  <StoryblokComponent blok={story.content} />
+</Layout>

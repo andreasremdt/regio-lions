@@ -1,0 +1,12 @@
+---
+import type { Page } from "@/types/storyblok";
+import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro";
+
+interface Props {
+  blok: Page;
+}
+
+const { blok } = Astro.props;
+---
+
+{blok.body?.map((blok) => <StoryblokComponent blok={blok} />)}

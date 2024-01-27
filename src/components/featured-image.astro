@@ -1,0 +1,20 @@
+---
+import type { FeaturedImage } from "@/types/storyblok";
+import { storyblokEditable } from "@storyblok/astro";
+
+interface Props {
+  blok: FeaturedImage;
+}
+
+const { blok } = Astro.props;
+---
+
+<figure {...storyblokEditable(blok)}>
+  <img
+    src={blok.image.filename}
+    alt={blok.image.alt}
+    width="1200"
+    height="450"
+    class="max-h-[450px] w-full rounded-xl object-cover object-top shadow-lg"
+  />
+</figure>

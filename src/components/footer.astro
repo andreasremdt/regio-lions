@@ -1,3 +1,10 @@
+---
+import { getMenuLinks } from "@/lib/storyblok";
+import { formatLink } from "@/lib/utils";
+
+const links = await getMenuLinks("footer");
+---
+
 <footer
   class="relative mx-auto mt-16 flex max-w-7xl flex-col items-center justify-center p-8 text-center text-sm before:absolute before:bottom-0 before:left-0 before:-z-10 before:aspect-square before:w-64 before:rounded-full before:bg-indigo-100 before:blur-3xl md:flex-row md:justify-between md:text-left"
 >
@@ -12,15 +19,15 @@
   </p>
 
   <nav class="space-x-4 md:space-x-8">
-    <a
-      href="/impressum"
-      class="rounded-sm transition-colors hover:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
-      >Impressum</a
-    >
-    <a
-      href="/datenschutz"
-      class="rounded-sm transition-colors hover:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
-      >Datenschutz</a
-    >
+    {
+      links.map((link) => (
+        <a
+          href={formatLink(link.link)}
+          class="rounded-sm transition-colors hover:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
+        >
+          {link.name}
+        </a>
+      ))
+    }
   </nav>
 </footer>

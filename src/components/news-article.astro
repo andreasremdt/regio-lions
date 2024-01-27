@@ -1,0 +1,65 @@
+---
+import type { News } from "@/types/storyblok";
+import { storyblokEditable, renderRichText } from "@storyblok/astro";
+import Icon from "@/components/icon.astro";
+
+interface Props {
+  blok: News;
+}
+
+const { blok } = Astro.props;
+---
+
+<header class="py-8" {...storyblokEditable(blok)}>
+  <h1 class="h1 mb-8">{blok.title}</h1>
+  <p class="mb-6 text-lg md:mb-12 md:w-2/3 md:text-xl lg:w-1/2">
+    {blok.description}
+  </p>
+</header>
+
+<div class="mx-auto md:w-2/3">
+  {
+    blok.image?.id ? (
+      <figure class="mb-12 md:-mx-24 xl:-mx-52">
+        <img
+          src={blok.image.filename}
+          alt={blok.image.alt}
+          width="1000"
+          height="600"
+          class="mb-4 w-full rounded-xl shadow-lg"
+        />
+        {blok.image.title ||
+          (blok.image.name && (
+            <figcaption class="flex">
+              <Icon
+                name="info"
+                class="mr-2 h-5 w-5 flex-shrink-0 text-gray-400"
+              />
+
+              <p class="text-sm text-gray-500">
+                {blok.image.title || blok.image.name}
+              </p>
+            </figcaption>
+          ))}
+      </figure>
+    ) : null
+  }
+
+  <div class="prose max-w-none" set:html={renderRichText(blok.content)} />
+
+  {
+    blok.gallery?.length ? (
+      <figure class="mt-6 grid grid-cols-2 gap-4 md:mt-12 md:grid-cols-3 md:gap-8">
+        {blok.gallery.map((image) => (
+          <img
+            src={image.filename}
+            alt={image.alt}
+            width="500"
+            height="400"
+            class="rounded-xl shadow-lg"
+          />
+        ))}
+      </figure>
+    ) : null
+  }
+</div>

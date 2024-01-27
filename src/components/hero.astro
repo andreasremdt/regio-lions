@@ -1,12 +1,41 @@
 ---
+import type { Hero } from "@/types/storyblok";
+import { storyblokEditable } from "@storyblok/astro";
+import { formatLink } from "@/lib/utils";
+
 interface Props {
-  title: string;
+  blok: Hero;
 }
 
-const { title } = Astro.props;
+const { blok } = Astro.props;
 ---
 
-<header class="py-8">
-  <h1 class="h1 mb-8">{title}</h1>
-  <p class="mb-6 text-lg md:mb-12 md:w-2/3 md:text-xl lg:w-1/2"><slot /></p>
-</header>
+<section
+  {...storyblokEditable(blok)}
+  class="relative py-16 before:absolute before:bottom-32 before:right-0 before:-z-10 before:aspect-square before:w-64 before:rounded-full before:bg-fuchsia-100 before:blur-3xl after:absolute after:-bottom-48 after:right-32 after:-z-10 after:aspect-square after:w-72 after:rounded-full after:bg-purple-100 after:blur-3xl md:py-32"
+>
+  <h1 class="h1 mb-8 md:w-3/5">{blok.headline}</h1>
+  <p class="mb-8 text-xl sm:w-2/3 md:w-1/2">{blok.body}</p>
+  {
+    blok.button_text && (
+      <a href={formatLink(blok.button_link)} class="btn btn-primary">
+        {blok.button_text} &rarr;
+      </a>
+    )
+  }
+
+  {
+    blok.images?.length ? (
+      <div class="hero-gallery right-0 mt-8 md:absolute md:top-40 md:mt-0 md:w-2/5 lg:top-12">
+        {blok.images.slice(0, 5).map((image) => (
+          <img
+            src={image.filename}
+            alt={image.alt}
+            class="aspect-[1/1.5] h-full rounded-xl object-cover shadow-lg"
+            height="350"
+          />
+        ))}
+      </div>
+    ) : null
+  }
+</section>

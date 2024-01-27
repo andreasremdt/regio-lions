@@ -1,0 +1,28 @@
+---
+import type { OurGoals } from "@/types/storyblok";
+import { storyblokEditable } from "@storyblok/astro";
+
+interface Props {
+  blok: OurGoals;
+}
+
+const { blok } = Astro.props;
+---
+
+<section class="py-16 md:py-32 lg:py-48" {...storyblokEditable(blok)}>
+  <h2 class="h2 mb-8">{blok.heading}</h2>
+  <p class="mb-12 text-xl md:w-2/3 lg:w-1/2">
+    {blok.description}
+  </p>
+
+  <ul class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    {
+      blok.goals.map((goal) => (
+        <li>
+          <h3 class="h3 mb-2">{goal.heading}</h3>
+          {goal.text}
+        </li>
+      ))
+    }
+  </ul>
+</section>

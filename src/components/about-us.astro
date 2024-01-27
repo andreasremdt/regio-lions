@@ -1,0 +1,33 @@
+---
+import type { AboutUs } from "@/types/storyblok";
+import { storyblokEditable, renderRichText } from "@storyblok/astro";
+
+interface Props {
+  blok: AboutUs;
+}
+
+const { blok } = Astro.props;
+---
+
+<section class="py-16 md:py-32 lg:py-48" {...storyblokEditable(blok)}>
+  <h2 class="h2 mb-8">{blok.heading}</h2>
+  <div class="flex flex-col gap-8 md:flex-row md:gap-16">
+    <div
+      class="prose max-w-none md:w-3/5 [&>p:first-child]:text-xl"
+      set:html={renderRichText(blok.content)}
+    />
+
+    {
+      blok.facts?.length ? (
+        <ul class="space-y-8 md:w-2/5">
+          {blok.facts.map((fact) => (
+            <li class="md:text-xl">
+              <span class="h3 block md:mb-2">{fact.heading}</span>
+              {fact.text}
+            </li>
+          ))}
+        </ul>
+      ) : null
+    }
+  </div>
+</section>

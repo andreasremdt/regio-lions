@@ -1,0 +1,17 @@
+---
+import type { PageHeader } from "@/types/storyblok";
+import { storyblokEditable } from "@storyblok/astro";
+
+interface Props {
+  blok: PageHeader;
+}
+
+const { blok } = Astro.props;
+---
+
+<header class="py-8" {...storyblokEditable(blok)}>
+  <h1 class="h1 mb-8">{blok.heading}</h1>
+  <p class="mb-6 text-lg md:mb-12 md:w-2/3 md:text-xl lg:w-1/2">
+    {blok.description}
+  </p>
+</header>

@@ -1,0 +1,43 @@
+---
+import type { ClubLinks } from "@/types/storyblok";
+import { storyblokEditable } from "@storyblok/astro";
+
+interface Props {
+  blok: ClubLinks;
+}
+
+const { blok } = Astro.props;
+---
+
+<h2 class="h2 mb-8 mt-16 font-black first-of-type:mt-0">{blok.heading}</h2>
+<div class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-4">
+  {
+    blok.clubs?.map((club) => (
+      <article
+        class="focus-within:outline-3 group relative overflow-hidden rounded-xl shadow-lg after:absolute after:inset-0 after:z-0 after:rounded-xl after:bg-gradient-to-b after:from-transparent after:to-gray-900/80 focus-within:outline focus-within:outline-offset-2 focus-within:outline-primary-900"
+        {...storyblokEditable(club)}
+      >
+        <img
+          src={club.image.filename}
+          alt={`bild vom ${club.name}`}
+          width="400"
+          height="400"
+          class="aspect-square h-full max-h-72 w-full object-cover transition-transform duration-500 group-hover:scale-110 sm:max-h-none"
+        />
+
+        <div class="absolute inset-0 z-10 flex flex-col justify-end p-4 md:px-8 md:py-6">
+          <h3 class="h4">
+            <a
+              href={club.url.cached_url}
+              target={club.url.target}
+              rel="noopener nofollow noreferrer"
+              class="text-white after:absolute after:inset-0 focus-visible:outline-none"
+            >
+              {club.name}
+            </a>
+          </h3>
+        </div>
+      </article>
+    ))
+  }
+</div>

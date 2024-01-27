@@ -1,6 +1,11 @@
 ---
 import { Image } from "astro:assets";
 import logo from "@/images/logo.png";
+import Icon from "@/components/icon.astro";
+import { formatLink } from "@/lib/utils";
+import { getMenuLinks } from "@/lib/storyblok";
+
+const links = await getMenuLinks("header");
 ---
 
 <header
@@ -29,25 +34,7 @@ import logo from "@/images/logo.png";
     data-action="toggle-menu"
     class="z-20 rounded-sm text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900 md:hidden"
   >
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke-width="1.5"
-      aria-hidden="true"
-      stroke="currentColor"
-      class="z-20 h-10 w-10"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="hidden"
-        d="M6 18 18 6M6 6l12 12"></path>
-    </svg>
+    <Icon name="menu" class="z-20 h-10 w-10" />
   </button>
 
   <nav
@@ -55,49 +42,22 @@ import logo from "@/images/logo.png";
     data-action="menu"
     id="menu"
   >
-    <a
-      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
-      tabindex="0"
-      href="/">Home</a
-    >
-    <a
-      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
-      tabindex="0"
-      href="/news">News</a
-    >
-    <a
-      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
-      tabindex="0"
-      href="/clubs">Clubs</a
-    >
-    <a
-      class="inline-flex items-center gap-x-2 rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
-      tabindex="0"
-      href="https://www.3laenderlauf.org/"
-      target="_blank"
-      rel="noopener nofollow noreferrer"
-    >
-      3-Länderlauf <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="h-5 w-5 -translate-y-px text-gray-400"
-        aria-hidden="true"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
-        ></path>
-      </svg></a
-    >
-    <a
-      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
-      href="/kontakt"
-      tabindex="0">Kontakt</a
-    >
+    {
+      links.map((link) => (
+        <a
+          class="inline-flex items-center gap-x-2 rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
+          tabindex="0"
+          target={link.link.target}
+          rel={link.link.rel}
+          href={formatLink(link.link)}
+        >
+          {link.name}
+          {link.link.linktype === "url" && (
+            <Icon name="link" class="h-5 w-5 -translate-y-px text-gray-400" />
+          )}
+        </a>
+      ))
+    }
   </nav>
 </header>
 

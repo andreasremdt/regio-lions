@@ -1,0 +1,49 @@
+---
+import { getNews } from "@/lib/storyblok";
+import { formatLink, formatDate } from "@/lib/utils";
+
+const news = await getNews();
+---
+
+<div
+  class="mb-16 grid grid-cols-1 gap-x-4 gap-y-16 sm:grid-cols-2 md:gap-x-8 lg:grid-cols-1"
+>
+  {
+    news.map((entry) => (
+      <article class="flex flex-col gap-6 lg:flex-row lg:gap-12">
+        {entry.content.image.id && (
+          <img
+            src={entry.content.image.filename}
+            alt={entry.name}
+            width="250"
+            height="250"
+            class="h-64 w-full rounded-xl object-cover shadow-lg lg:h-auto lg:w-auto lg:max-w-64"
+          />
+        )}
+        <div class="flex flex-col justify-center">
+          <time datetime={entry.created_at} class="text-sm text-gray-500">
+            {formatDate(entry.created_at)}
+          </time>
+
+          <h2 class="h4 mb-6 mt-1">
+            <a
+              href={formatLink(entry.full_slug)}
+              class="rounded-sm transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
+            >
+              {entry.name}
+            </a>
+          </h2>
+
+          <p>{entry.content.description}</p>
+
+          <a
+            href={formatLink(entry.full_slug)}
+            class="btn btn-secondary mt-6 w-max"
+          >
+            Weiterlesen &rarr;
+          </a>
+        </div>
+      </article>
+    ))
+  }
+</div>

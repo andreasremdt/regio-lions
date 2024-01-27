@@ -1,0 +1,32 @@
+---
+import type { OurMeans } from "@/types/storyblok";
+import { renderRichText, storyblokEditable } from "@storyblok/astro";
+
+interface Props {
+  blok: OurMeans;
+}
+
+const { blok } = Astro.props;
+---
+
+<section class="pt-16 md:pt-32 lg:pt-48" {...storyblokEditable(blok)}>
+  <h2 class="h2 mb-8">{blok.heading}</h2>
+  <p class="mb-12 text-xl md:w-2/3 lg:w-1/2">
+    {blok.description}
+  </p>
+
+  <div class="grid grid-cols-1 gap-16 md:grid-cols-2">
+    <img
+      src={blok.image.filename}
+      alt="placeholder image for later purposes"
+      width="500"
+      height="600"
+      class="h-full rounded-xl object-cover shadow-lg"
+    />
+
+    <div
+      class="prose ml-4 max-w-none"
+      set:html={renderRichText(blok.content)}
+    />
+  </div>
+</section>
