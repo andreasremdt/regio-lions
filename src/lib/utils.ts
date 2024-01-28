@@ -21,3 +21,7 @@ export function formatLink(link?: StoryblokLink | string) {
 
   return `/${link.cached_url}`;
 }
+
+export function isPreview() {
+  return import.meta.env.STORYBLOK_IS_PREVIEW === "true";
+}
