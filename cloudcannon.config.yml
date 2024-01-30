@@ -1,41 +1,26 @@
 source: src/
 paths:
-  uploads: public
-  static: ''
-  collections: ''
-  data: ''
-  layouts:
+  uploads: public/uploads
+  static: public
 collections_config:
   news:
-    path: content/
+    path: src/content/news
     output: true
-    url: /news/[slug]
-    filter:
-    parse_branch_index:
+    url: /news/[slug]/
     name: News
-    description: ''
-    icon: notes
-    documentation:
-    preview:
-    sort:
-    sort_options:
-    singular_name:
-    singular_key:
-    _editables: {}
-    _inputs: {}
-    _select_data: {}
-    _structures: {}
-    add_options:
-    create:
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-    new_preview_url:
-    schemas: {}
-    schema_key:
-_inputs: {}
-_select_data: {}
-_structures: {}
-_editables: {}
-data_config: {}
+    icon: posts
+    _enable_editors:
+      - content
+    _inputs:
 timezone: Europe/Berlin
+commit_templates:
+  - template_string: "{commit_type}: {message|trim}"
+    _inputs:
+      commit_type:
+        type: select
+        options:
+          values:
+            - feature
+            - fix
+            - refactor
+            - content
