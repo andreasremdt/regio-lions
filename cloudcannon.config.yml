@@ -12,7 +12,7 @@ collections_config:
       - content
     _inputs:
       title:
-        type: string
+        type: text
         label: News Title
       excerpt:
         type: textarea
