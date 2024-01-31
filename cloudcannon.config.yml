@@ -11,6 +11,22 @@ collections_config:
     _enable_editors:
       - content
     _inputs:
+      title:
+        type: string
+        label: News Title
+      excerpt:
+        type: textarea
+        label: Excerpt
+      image:
+        type: image
+        label: Thumbnail Image
+        options:
+          width: 1300
+          resize_style: cover
+      created_at:
+        type: date
+        label: Created At
+
 timezone: Europe/Berlin
 commit_templates:
   - template_string: "{commit_type}: {message|trim}"
