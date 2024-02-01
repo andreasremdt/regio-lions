@@ -6,7 +6,13 @@ export const collections = {
     schema: z.object({
       title: z.string(),
       excerpt: z.string(),
-      image: z.string().optional(),
+      image: z
+        .object({
+          src: z.string(),
+          alt: z.string().optional(),
+          caption: z.string().optional(),
+        })
+        .optional(),
     }),
   }),
 };
