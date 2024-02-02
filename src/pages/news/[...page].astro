@@ -1,22 +1,15 @@
 ---
 import type { GetStaticPaths } from "astro";
-import { getCollection } from "astro:content";
 import Hero from "@/components/hero.astro";
 import NewsPreview from "@/components/news-preview.astro";
 import Pagination from "@/components/pagination.astro";
 import Layout from "@/layout/default.astro";
+import { getNews } from "@/lib/utils";
 
 export const getStaticPaths = (async ({ paginate }) => {
-  const news = await getCollection("news");
+  const news = await getNews();
 
-  return paginate(
-    news
-      .filter((entry) => entry.data.published)
-      .sort(
-        (a, b) => b.data.created_at.getTime() - a.data.created_at.getTime(),
-      ),
-    { pageSize: 6 },
-  );
+  return paginate(news, { pageSize: 6 });
 }) satisfies GetStaticPaths;
 
 const { page } = Astro.props;

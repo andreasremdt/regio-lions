@@ -2,15 +2,15 @@
 import { Image } from "astro:assets";
 import Card from "@/components/card.astro";
 import Layout from "@/layout/default.astro";
+import { getNews } from "@/lib/utils";
 
-import lionsClubBasel from "@/images/lions-club-basel.jpg";
-import lionsClubBaselSpalen from "@/images/lions-club-basel-spalen.jpg";
-import lionsClubBaselStAlban from "@/images/lions-club-basel-st-alban.jpg";
 import frontPage1 from "@/images/front-page-1.jpg";
 import frontPage2 from "@/images/front-page-2.jpg";
 import frontPage3 from "@/images/front-page-3.jpg";
 import frontPage4 from "@/images/front-page-4.jpg";
 import frontPage5 from "@/images/front-page-5.jpg";
+
+const news = await getNews();
 ---
 
 <Layout>
@@ -176,24 +176,22 @@ import frontPage5 from "@/images/front-page-5.jpg";
     </p>
 
     <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
-      <Card
-        title="Adventskalender 2023"
-        date={new Date()}
-        href="/news/test"
-        image={lionsClubBasel}
-      />
-      <Card
-        title="Freudiges Ziehen am selben Strang: trinationale Hausbootfahrt 2023"
-        date={new Date()}
-        href="/news/test"
-        image={lionsClubBaselSpalen}
-      />
-      <Card
-        title="Adventskalender 2023"
-        date={new Date()}
-        href="/news/test"
-        image={lionsClubBaselStAlban}
-      />
+      {
+        news
+          .filter((entry) => Boolean(entry.body))
+          .sort(
+            (a, b) => b.data.created_at.getTime() - a.data.created_at.getTime(),
+          )
+          .slice(0, 3)
+          .map((entry) => (
+            <Card
+              title={entry.data.title}
+              date={entry.data.created_at}
+              href={`/news/${entry.slug}`}
+              image={entry.data.image?.src}
+            />
+          ))
+      }
     </div>
 
     <div class="mt-12 text-center">

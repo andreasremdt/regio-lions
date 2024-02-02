@@ -1,18 +1,16 @@
 ---
-import { getCollection } from "astro:content";
 import { Picture } from "astro:assets";
 import Hero from "@/components/hero.astro";
 import Layout from "@/layout/default.astro";
+import { getNews } from "@/lib/utils";
 
 export async function getStaticPaths() {
-  const news = await getCollection("news");
+  const news = await getNews();
 
-  return news
-    .filter((entry) => Boolean(entry.body))
-    .map((entry) => ({
-      params: { slug: entry.slug },
-      props: { entry },
-    }));
+  return news.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
 }
 
 const { entry } = Astro.props;
