@@ -2,6 +2,8 @@
 title: Benefizkonzert des Lions Club Schliengen am 21.9.2014
 slug: benefizkonzert-lc-schliengen-2014
 excerpt: Nach den großen Erfolgen der Vorjahre setzt der Lions Club Schliengen im Markgräflerland die traditionelle Reihe seiner Benefizkonzerte mit dem Verbandsjugendblasorchester Hochrhein fort.
+published: true
+created_at: 2014-09-15
 ---
 
 Nach den großen Erfolgen der Vorjahre setzt der Lions Club Schliengen im Markgräflerland die traditionelle Reihe seiner Benefizkonzerte mit dem Verbandsjugendblasorchester Hochrhein fort. Das Konzert findet statt am **Sonntag, 21.September 2014**, um 17 Uhr in der Pfarrkirche St. Leodegar in Schliengen als Abschluss des Pfarrfestes.

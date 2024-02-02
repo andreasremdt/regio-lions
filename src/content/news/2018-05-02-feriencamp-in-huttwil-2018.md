@@ -2,6 +2,8 @@
 title: Trinationales Sommercamp 2018 in Huttwil
 slug: feriencamp-in-huttwil-2018
 excerpt: Harmonisches Miteinander beim Sommercamp der Regio Lions - Jugendliche aus dem Kreis Lörrach, aus Basel und aus dem Elsass arbeiteten mit viel Freude auf einem Bauernhof.
+published: true
+created_at: 2018-05-02
 ---
 
 Es ist schon Tradition, dass die Regio Lions, eine Vereinigung von Lions Clubs aus dem Landkreis Lörrach, aus Basel und aus dem Elsass, ein einwöchiges Camp auf einem Bauernhof in Huttwil im Emmental anbieten. In diesem Jahr haben sechzehn Jugendliche an der Unternehmung teilgenommen. Und nach Einschätzung der Verantwortlichen war es „ein ganz besonders gutes Camp“: Von Anfang an herrschte ein harmonisches Miteinander, was sicherlich auch daran lag, dass die sieben Jugendlichen aus dem Elsass gut Deutsch konnten und es keinerlei Verständigungsprobleme mit den Gleichaltrigen aus Basel, Lörrach und Weil gab. Alle machten bei den Arbeitseinsätzen ebenso gut und interessiert mit wie beim begleitenden Freizeitprogramm.

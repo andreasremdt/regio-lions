@@ -2,6 +2,8 @@
 title: Lions Aviatik-Weekend am 26.-28. November 2021 in Berlin Brandenburg
 slug: lions-aviatik-weekend-2021
 excerpt: Infolge der Pandemie mussten wir unsere Veranstaltung in Berlin auf dieses Jahr verschieben. In der aktuellen und um einiges entspannteren Situation sind wir zuversichtlich, dass es uns in diesem Jahr gelingen wird, die bereits schon einmal geplanten Aktivitäten im kommenden Herbst zu realisieren. Dafür vorgesehen wäre das Wochenende des 26.–28. November 2021.
+published: true
+created_at: 2021-07-21
 ---
 
 Anmeldungen bitte an urs.mueller@zurich-airport.com

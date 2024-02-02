@@ -2,6 +2,8 @@
 title: Hausbootfahrt 2018 der Regio Lions
 slug: hausbootfahrt-2018
 excerpt: Ein schönes langes Wochenende - Regio Lions luden Jugendliche aus den drei Nachbarländern zu einer Hausbootfahrt ein.
+published: true
+created_at: 2018-05-02
 ---
 
 15 Jugendliche aus dem Landkreis Lörrach, aus Basel und aus dem Elsass konnten sich auf Einladung der Regio Lions vom 27.4. bis zum 1.5.2018 auf eine ereignisreiche Fahrt auf zwei großen Hausbooten begeben. Von der Basis der Firma Kuhnle-Tours in Niderviller fuhren sie auf dem Rhein-Marne-Kanal nach Saverne und zurück.

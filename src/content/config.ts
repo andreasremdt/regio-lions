@@ -6,6 +6,8 @@ export const collections = {
     schema: z.object({
       title: z.string(),
       excerpt: z.string(),
+      published: z.boolean(),
+      created_at: z.date(),
       image: z
         .object({
           src: z.string(),

@@ -2,6 +2,8 @@
 title: Regio Lions Reitcamp 2019 in Réclère
 slug: reitcamp-reclere-2019
 excerpt: Für 17 Kinder aus dem Elsass, aus Basel und aus dem Landkreis Lörrach war das Reitcamp in Réclère im Schweizer Jura ein Ferienlager der Superlative. Auf Einladung der Regio Lions konnten sie fünf wunderschöne Tage beim Préhisto-Parc verbringen.
+published: true
+created_at: 2019-08-18
 ---
 
 Gleich nach der Ankunft und der Einnahme des ersten gemeinsamen Mittagessens konnte die mit Zug und Bus angereiste Gruppe an einer Führung in der Tropfsteinhöhle von Réclère teilnehmen. Angesichts der Vielzahl und der Schönheit der Tropfsteine kamen die meisten auf dem 1,5 km langen und 75 Minuten dauernden Rundgang ins Schwärmen. Klar, dass sehr Vieles mit dem Smartphone fotografiert und gefilmt wurde. Vor dem größten Stalagmiten der Höhle, dem 15 Meter hohen und ca. 250000 Jahre alten „Dom“ wurde ein erstes Gruppenfoto gemacht.

@@ -2,6 +2,8 @@
 title: 10. Regiolions-Abend in Village Neuf am 18.4.15
 slug: regio-lions-abend-village-neuf
 excerpt: Der Kongress des District 103 Est wird am 18. und 19. April 2015 in Saint-Louis stattfinden.
+published: true
+created_at: 2015-03-29
 ---
 
 Liebe Lions Freunde, liebe Leos,

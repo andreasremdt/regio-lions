@@ -2,6 +2,8 @@
 title: Einladung 25 Jahre 3-Länderlauf
 slug: einladung-3-laenderlauf
 excerpt: Sehr gerne laden wir Sie, in Begleitung, zu unserem Jubiläumsanlass im Rathaus Basel, Grossratssaal, am Do. 30. April 2015, um 17:00h, ein und freuen uns im Voraus.
+published: true
+created_at: 2015-03-29
 ---
 
 Herzliche Einladung zu unserem Anlass 25 Jahre Dreiländer-Lauf, Basel – St.Louis – Huningue – Weil am Rhein.

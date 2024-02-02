@@ -2,6 +2,8 @@
 title: Hausbootfahrt 2020 der Regio Lions mit Jugendlichen aus den drei Nachbarländern
 slug: hausbootfahrt-2020
 excerpt: Projekt zur Förderung der Freundschaft über Grenzen hinweg / Förderung durch die Oberrheinkonferenz
+published: true
+created_at: 2020-08-09
 ---
 
 Acht Jugendliche aus den Départements Haut-Rhin und Bas-Rhin sowie je sechs aus Lörrach und aus Basel folgten der Einladung der Regio Lions und verbrachten Ende Juli gemeinsam vier Tage auf drei großen Hausbooten. Nach der Anreise mit dem Zug bzw. mit Privatautos stand nach einem ersten Essen gleich ein besonderer Workshop auf dem Programm: Unter Anleitung eines geübten Slackline-Spezialisten durften sich alle, die wollten beim Balancieren auf dem Gurtband probieren. Alle Betreuer waren erstaunt darüber, wie couragiert sich vor allem die Mädchen aus den drei Ländern auf das Seil begaben. Hoch konzentriert tasteten sich die Mädchen aus Lörrach, Basel, Saint-Louis, Colmar und Strasbourg über das zunächst zwischen zwei Bäumen über Land gespannte Seil. Anschließend folgte für die ganz Wagemutigen eine Gaudi mit feuchtfröhlichem Ausgang: Das Laufen über das über den Kanal gespannte Seil mit vorprogrammiertem Absprung ins wohltemperierte Wasser.

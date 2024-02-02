@@ -2,6 +2,8 @@
 title: Lions-Treff in Basel
 slug: lions-treff-basel
 excerpt: Nicht nur bei emotionalen Menschen sind Tränen keine Seltenheit, und verbunden mit Lachen – also Freudestränen – sind sie etwas tolles und beeinflussen oftmals das unmittelbare Umfeld positiv durch ihre ansteckende Wirkung. Gegenteilig können Tränen auch ein Zeichen von Trauer und negativen Emotionen sein, etwa bei einem zu schnellen Ende.
+published: true
+created_at: 2022-11-27
 ---
 
 Liebe Lionsfreundinnen

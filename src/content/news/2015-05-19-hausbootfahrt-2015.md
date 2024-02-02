@@ -2,6 +2,8 @@
 title: Trinationale Hausbootfahrt 2015
 slug: hausbootfahrt-2015
 excerpt: Die Regio Lions luden zu einer besonderen Fahrt in den Mai ein / Interessante Route auf zwei Kanälen und umfangreiches Rahmenprogramm
+published: true
+created_at: 2015-05-19
 ---
 
 1. Mai 2015, 7 Uhr: In Lörrach wird ein Bus mit Proviant für drei Tage beladen. Nach und nach steigen 22 Personen aus drei Ländern ein. Die Ersten sind Jugendliche aus Lörrach und aus Weil am Rhein. Das Schweizer Kontingent füllen acht „Erlen-Kids“, 14- bis 17-Jährige, die ehrenamtlich im Basler Tierpark „Lange Erlen“ mithelfen. In Frankreich steigen fünf Jugendliche aus Saint-Louis sowie zwei weitere aus Mulhouse bzw. Guebwiller ein.

@@ -2,6 +2,8 @@
 title: Regio Lions Fly-In 2017
 slug: regio-lions-fly-in-2017
 excerpt: Nach 2016 in Buochs in der Innerschweiz führten die Regio Lions am 19./20. August dieses Jahres ihr zweites Aviatik-Wochenende auf dem Flugplatz Bremgarten im Breisgau durch. Organisiert wurde der Anlass durch Lion Peter Völker aus Kandern zusammen mit Lion PDG Ingo Büren aus Konstanz. Dank diesen Beiden erlebten wir auch dieses Mal wieder ein erfolgreiches Fly-in!
+published: true
+created_at: 2017-12-01
 ---
 
 Bremgarten liegt im Breisgau und das was dieser Flugplatz zu bieten hat, lässt das Fliegerherz definitiv höherschlagen. In den Hangars und auf dem Flugfeld sind seltene Oldtimer-Flugzeuge zu besichtigen, und auf dem ausgedehnten Flugfeld ist immer etwas los. Von 1968 bis 1993 war dort übrigens das Aufklärungsgeschwader 51 „Immelmann“ der Bundesluftwaffe stationiert. Ein Museum zeugt noch von dieser Zeit. Somit war der Flugplatz allen unseren Teilnehmenden gleich nach deren Ankunft sehr sympathisch und strahlte eine gewisse Vertrautheit aus.

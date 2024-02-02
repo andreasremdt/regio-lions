@@ -2,6 +2,8 @@
 title: Trinationales Sommercamp 2015 in Huttwil
 slug: feriencamp-in-huttwil-2015
 excerpt: Von Samstagmorgen bis am späten Freitagabend der darauffolgenden Woche erlebten Jugendliche aus Deutschland, aus Frankreich und aus der Schweiz auf Einladung der Regio Lions eine ungewöhnliche Freizeit im Emmental.
+published: true
+created_at: 2015-08-18
 ---
 
 Wie abgesprochen, kamen alle am 1. August zum Treffpunkt im Bahnhof Basel SBB. Am Fuß der Rolltreppe trafen sich acht Erlen-Kids (Jugendliche, die sich im Tierpark Lange Erlen ehrenamtlich als Tierpfleger engagieren), acht Teenager aus Weil, Lörrach, Rheinfelden und Efringen-Kirchen sowie zwei Mädchen und ein junger Mann aus dem Elsass. Eine ehrenamtlichen Helferin und ein Mitglied des Weiler Lions Clubs leiteten das Camp.

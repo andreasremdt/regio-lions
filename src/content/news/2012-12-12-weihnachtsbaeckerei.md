@@ -2,6 +2,8 @@
 title: Weihnachtsbäckerei
 slug: weihnachtsbaeckerei
 excerpt: Wie schon in den Vorjahren hatten Bäckermeister Klaus Kotz und seine Frau Christa die Lions Clubs Müllheim-Neuenburg und Schliengen im Markgräflerland zur Weihnachtsbäckerei eingeladen. Pünktlich und aufgeregt fanden sich am Nachmittag des 2. Advent über 40 Kinder der Clubmitglieder  und befreundeter Familien in der Backstube in der Müllheimer Unterstadt ein.
+published: true
+created_at: 2012-12-12
 ---
 
 Wer schon dabei war, kannte es schon, dass man zunächst mit Schuhschutz und Kopfbedeckung den hygienischen Vorschriften genügen musste. Aber dann durften die Kinder endlich an den Backtisch. Weih baeck1Die ganz Kleinen standen auf vorsorglich beschafften Plastikeimern, damit die Nase über den Tisch reichte und sie dort überhaupt fleißig mitarbeiten konnten. Nach nur kurzer Einweisung wurde der vorbereitete Teig mit großer Begeisterung ausgestochen.

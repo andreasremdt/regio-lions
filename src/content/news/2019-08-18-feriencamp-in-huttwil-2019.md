@@ -2,6 +2,8 @@
 title: Trinationales Sommercamp 2019 in Huttwil
 slug: feriencamp-in-huttwil-2019
 excerpt: Auf Einladung der Regio Lions konnten Jugendliche aus dem Elsass, aus dem Landkreis Lörrach und aus Basel eine erlebnisreiche Woche auf einem Bauernhof in Huttwil im Emmental verbringen.
+published: true
+created_at: 2019-08-18
 ---
 
 Gleich am ersten Tag, genauer gesagt, noch bevor die erste Stallarbeit am Abend erledigt wurde, konnten sich die Jugendlichen über eine Show der Extraklasse freuen. Der aus Thun angereiste Zauberer Dani Lötscher brachte alle ein ums andere Mal zum Staunen. Wie er beispielsweise den Tisch zum Schweben gebracht hat, konnte sich auch hinterher niemand erklären.

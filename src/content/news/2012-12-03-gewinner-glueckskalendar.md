@@ -2,6 +2,8 @@
 title: Gewinner beim Glückskalender
 slug: gewinner-glueckskalender
 excerpt: Herzlichen Glückwunsch zum Gewinn beim diesjährigen Lions Glücksadventskalender. Hier erhalten Sie einige Informationen, wie Sie zu Ihrem Gewinn kommen.
+published: true
+created_at: 2012-12-03
 ---
 
 Wenn Ihre Glücksnummer unter den Gewinnern ist, erhalten Sie Ihren Gewinn durch Vorlage des kompletten Kalenders bei der **Naturheilpraxis Thomas Gilgin, Im Mittelgrund 1, Bad Bellingen**.

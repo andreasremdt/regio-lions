@@ -2,6 +2,8 @@
 title: Lions Benefizkonzert
 slug: lions-benefizkonzert
 excerpt: Der Lions Club Schliengen im Markgräflerland setzt die traditionelle und erfolgreiche Reihe seiner Benefizkonzerte fort. Benefizkonzert mit dem Verbandsjugendblasorchester Hochrhein.
+published: true
+created_at: 2013-04-19
 ---
 
 Am Sonntag, 27. Oktober 2013, um 17 Uhr, Pfarrkirche St. Vinzenz in Schliengen-Liel, wird das erfolgreiche und vielfach ausgezeichnete Verbandsjugendblasorchester Hochrhein mit seinem Dirigenten Julian Gibbons unter dem Motto "American Journey" wieder mit bekannten und hinreißenden Melodien und Rhythmen aus der gehobenen zeitgenössischen Pop- und Film-Musik begeistern. Der Bogen spannt sich von Antonin Dvoraks „Neuer Welt“ über „Godzilla eats Las Vegas“ bis hin zu „New York, New York“.

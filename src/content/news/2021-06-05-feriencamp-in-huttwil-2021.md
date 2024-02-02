@@ -2,6 +2,8 @@
 title: Camps der Regio Lions mit Jugendlichen aus drei Ländern
 slug: feriencamp-in-huttwil-2021
 excerpt: Arbeiten auf einem Bauernhof in der Schweiz und Hausboot fahren in Frankreich / Förderung durch den Jugendfonds der Oberrheinkonferenz
+published: true
+created_at: 2021-06-05
 ---
 
 Beide Freizeiten mit Jugendlichen aus dem Landkreis Lörrach, aus dem Raum Basel und aus dem Elsass haben inzwischen Tradition: Ende Juli wurde das Sommercamp auf einem Bauernhof in Huttwil im Emmental durchgeführt. Sechs Tage lang wurde die Stallarbeit von den Jugendlichen übernommen. Morgens um 6 Uhr und abends um 17 Uhr waren das Melken von 29 Kühen sowie das Ausmisten des Stalles angesagt. Mit Freude waren alle auch bei Arbeiten auf dem Feld, im Wald und bei der Grundreinigung des Hühnerstalls dabei. Gleich am ersten Abend sorgte das Lörracher Duo Tina & Jo für einen ersten Höhepunkt im Freizeitprogramm: Gerne kamen die Kids vor der ersten Nacht im Strohlager der Aufforderung „Sing with us!“ nach. An den weiteren Tagen standen ein Freibadbesuch und diverse Spiele auf dem Unterhaltungsprogramm. Regen Zuspruch erfuhr immer wieder das Bogenschießen. Auch der von Leo-Mitglied Andreas Remdt angeleitete Selbstverteidigungskurs fand großen Anklang. In bester Erinnerung wird allen bleiben, dass sie hautnah bei der Geburt eines Kalbs dabei sein konnten. Für Begeisterung sorgte auch die Verpflegung, zu der die Landwirtsfamilie täglich selbstgebackene Kuchen beisteuerte. Nach der Stallarbeit am letzten Abend sorgte ein abschließendes Pizzaessen für Stärkung vor der Heimreise.

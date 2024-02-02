@@ -2,6 +2,8 @@
 title: Hausbootfahrt 2016
 slug: hausbootfahrt-2016
 excerpt: Begegnung von deutschen, französischen und schweizer Jugendlichen - 6 Tage unterwegs auf Wasserstraßen in Frankreich / Finanzierung durch Regio Lions.
+published: true
+created_at: 2016-04-13
 ---
 
 Nach Ostern durften 18 Jugendliche auf Einladung von Lions Clubs aus Südbaden, aus dem Elsass und aus Basel gemeinsam auf große Fahrt gehen. Die jungen Leute aus der Schweiz und aus Deutschland waren mehrheitlich „Erlen-Kids", die sich ehrenamtlich als Tierpfleger im Basler Tierpark Lange Erlen engagieren. Für sie stellte die Fahrt auf drei geräumigen Hausbooten der Baureihe KORMORAN auf dem Rhein-Marne-Kanal und auf der Mosel ein großartiges Ferienprogramm dar. Anders verhielt es sich bei acht jungen Damen aus dem Elsass: Sie erhielten auf Initiative von Gérard Rogenmuser, Mitglied im Lions Club Mulhouse Europe von der Gewerbeschule CFAA de Mulhouse vier Tage Urlaub.

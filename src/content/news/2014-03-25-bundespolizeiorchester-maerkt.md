@@ -2,6 +2,8 @@
 title: Bundespolizeiorchester in Märkt am 21.3.15
 slug: bundespolizeiorchester-maerkt
 excerpt: Am 21. März 2015, um 20:00 Uhr spielt das Bundespolizeiorchester aus München in der Altrheinhalle in Märkt. Die 46 Berufsmusiker des 1952 gegründeten Orchesters spielen unter der Leitung des Dirigenten Christian Lombardi.
+published: true
+created_at: 2014-03-25
 ---
 
 Das Benefizkonzert zu Gunsten des Jugendpräventionsprogrammes „Quest“ erfolgt auf Initiative der Bürgerstiftung Weil am Rhein und des Lions-Club Weil am Rhein (Hilfswerk).

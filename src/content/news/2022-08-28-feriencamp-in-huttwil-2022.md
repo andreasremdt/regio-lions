@@ -2,6 +2,8 @@
 title: Trinationales Sommercamp 2022 in Huttwil
 slug: feriencamp-in-huttwil-2022
 excerpt: Nicht nur bei emotionalen Menschen sind Tränen keine Seltenheit, und verbunden mit Lachen – also Freudestränen – sind sie etwas tolles und beeinflussen oftmals das unmittelbare Umfeld positiv durch ihre ansteckende Wirkung. Gegenteilig können Tränen auch ein Zeichen von Trauer und negativen Emotionen sein, etwa bei einem zu schnellen Ende.
+published: true
+created_at: 2022-08-28
 ---
 
 In der Tat flossen letztere beim diesjährigen, trinationalen Sommercamp in Huttwil in der letzten Stunde, als es hieß, Abschied zu nehmen. Abschied von einer unvergesslichen Woche voller Erinnerungen, Erlebnisse und länderübergreifender Verbundenheit, verworben mit einem Leben auf dem Bauernhof, harter Arbeit, Spiele, und dem Gefühl, etwas erreicht zu haben.

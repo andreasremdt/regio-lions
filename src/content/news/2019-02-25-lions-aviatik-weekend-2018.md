@@ -2,6 +2,8 @@
 title: Lions Aviatikweekend 2018 in Colmar
 slug: lions-aviatik-weekend-2018
 excerpt: Es war einmal eine Idee, welche PCC Pierre-Alain Ruffieux und ich nach einer Governorratssitzung besprochen haben. Sie kam auf, weil wir wissen, dass der Lions Club zahlreiche Mitglieder hat, welche sich beruflich oder im Rahmen eines Hobbys mit der Aviatik auseinandersetzen.
+published: true
+created_at: 2019-02-25
 ---
 
 Die Idee wurde in Taten umgesetzt und im Jahr 2018 wurde auf dem Flugplatz Colmar im Elsass, nach Buochs (Zentralschweiz) und Bremgarten (Süddeutschland) bereits das dritte Lions Aviatikweekend unter dem Banner der Regio-Flyers durchgeführt. Die vierte Auflage ist auch schon wieder geplant und findet am 17./18. August 2019 im Raum Zürich statt.

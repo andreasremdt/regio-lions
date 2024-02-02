@@ -2,6 +2,8 @@
 title: Trinationales Lions Weinfest am 13.09.2008
 slug: trinationales-lions-weinfest
 excerpt: Anwesend waren Lionsfreunde aus Weil, Lörrach, Schliengen, Müllheim, Frankreich und der Schweiz (Basel, Luzern).
+published: true
+created_at: 2008-09-13
 ---
 
 Nach einem kleinen Mittagsessen im Festzelt fand die Kellerführung mit einer kleinen Weinprobe statt. Wir wurden von der Anlieferung der Trauben mit anschließender Erzeugung der Maische und Lagerung durch verschiedene Stationen der Weinerzeugung geführt.

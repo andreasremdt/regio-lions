@@ -2,6 +2,8 @@
 title: Freudiges Ziehen am selben Strang - trinationale Hausbootfahrt 2023
 slug: hausbootfahrt-2023
 excerpt: Trinationale Hausbootfahrt der Regio Lions mit Jugendlichen aus den drei Nachbarländern / Förderung durch die Oberrheinkonferenz
+published: true
+created_at: 2023-06-21
 ---
 
 „Es war einfach genial!“ – Diesem Fazit stimmten alle Beteiligten zu. Bei der Fahrt auf dem Rhein-Marne-Kanal wurde vier Tage lang ein freundschaftliches Miteinander gepflegt. Die 30 Schlafplätze auf den vier in Niderviller gemieteten Booten waren für Jugendliche im Alter zwischen 14 und 18 Jahren aus dem Landkreis Lörrach (7), aus dem Raum Basel (7) und dem Elsass (10) und für Betreuer aus dem Lions Club Weil sowie dem Leo-Club Weil am Rhein gebucht worden.

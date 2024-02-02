@@ -2,6 +2,8 @@
 title: Fürstliche Tafelfreuden auf Schluss Bürgeln
 slug: fuerstliche-tafelfreuden-schloss-buergeln
 excerpt: In Zusammenarbeit mit dem Lions-Club Schliengen im Markgräflerland möchten wir Sie zu unserer diesjährigen Benefiz-Gala "Fürstliche Tafelfreuden" auf Schloss Bürgeln am Samstag, den 02. November 2013, um 19.00 Uhr einladen.
+published: true
+created_at: 2013-07-08
 ---
 
 Im Rahmen einer Porzellan-Vernissage werden die verschiedenen Räume des Schlosses festlich eingedeckt. Die Tische zieren alte Damast-Tafeltücher, prächtige Servietten, Kristallgläser, Tafelsilber, Tafelleuchter und kostbares Porzellan. Die ältesten Stücke stammen aus dem 18. Jahrhundert, dem Rokoko, also der Zeit des Neubaus von Bürgeln.
