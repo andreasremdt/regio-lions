@@ -40,7 +40,7 @@ const { page } = Astro.props;
           title={entry.data.title}
           date={entry.data.created_at}
           excerpt={entry.data.excerpt}
-          href={`/news/${entry.slug}`}
+          href={Boolean(entry.body) ? `/news/${entry.slug}` : undefined}
           image={hausbootfahrt}
         />
       ))
