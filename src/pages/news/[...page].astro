@@ -1,0 +1,51 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getCollection } from "astro:content";
+import Hero from "@/components/hero.astro";
+import NewsPreview from "@/components/news-preview.astro";
+import Pagination from "@/components/pagination.astro";
+import Layout from "@/layout/default.astro";
+
+import hausbootfahrt from "@/images/hausbootfahrt.jpeg";
+
+export const getStaticPaths = (async ({ paginate }) => {
+  const news = await getCollection("news");
+
+  return paginate(
+    news
+      .filter((entry) => entry.data.published)
+      .sort(
+        (a, b) => b.data.created_at.getTime() - a.data.created_at.getTime(),
+      ),
+    { pageSize: 6 },
+  );
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props;
+---
+
+<Layout>
+  <Hero title="Aktuelle News">
+    Lernen Sie mehr über das was wir machen. Auf dieser Seite finden Sie eine
+    Historie unserer finanzierten oder selbst durchgeführten Aktivitäten, etwa
+    den 3-Länderlauf oder die trinationalen Ferienlager mit Jugendlichen.
+  </Hero>
+
+  <div
+    class="mb-16 grid grid-cols-1 gap-x-4 gap-y-16 sm:grid-cols-2 md:gap-x-8 lg:grid-cols-1"
+  >
+    {
+      page.data.map((entry) => (
+        <NewsPreview
+          title={entry.data.title}
+          date={entry.data.created_at}
+          excerpt={entry.data.excerpt}
+          href={`/news/${entry.slug}`}
+          image={hausbootfahrt}
+        />
+      ))
+    }
+  </div>
+
+  <Pagination page={page} />
+</Layout>
