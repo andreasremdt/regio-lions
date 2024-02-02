@@ -1,14 +1,18 @@
 ---
+import { Picture } from "astro:assets";
+import {} from "astro";
 import { formatDate } from "@/lib/utils";
-import { type ImageMetadata } from "astro";
-import { Image } from "astro:assets";
 
 interface Props {
   title: string;
   href?: string;
   excerpt: string;
   date: Date;
-  image?: ImageMetadata;
+  image?: {
+    src: string;
+    alt?: string;
+    caption?: string;
+  };
 }
 
 const { title, date, image, excerpt, href } = Astro.props;
@@ -16,15 +20,17 @@ const { title, date, image, excerpt, href } = Astro.props;
 
 <article class="flex flex-col gap-6 lg:flex-row lg:gap-12">
   {
-    image && (
-      <Image
-        src={image}
-        alt=""
-        width="250"
-        height="250"
+    image ? (
+      <Picture
+        src={image.src}
+        formats={["avif", "webp"]}
+        alt={image.alt || ""}
+        width={250}
+        quality={80}
+        height={250}
         class="h-64 w-full rounded-xl object-cover shadow-lg lg:aspect-square lg:h-auto lg:w-auto lg:max-w-64"
       />
-    )
+    ) : null
   }
   <div class="flex flex-col items-start">
     <time datetime={date.toISOString()} class="mt-4 text-sm text-gray-500"

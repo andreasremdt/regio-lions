@@ -6,8 +6,6 @@ import NewsPreview from "@/components/news-preview.astro";
 import Pagination from "@/components/pagination.astro";
 import Layout from "@/layout/default.astro";
 
-import hausbootfahrt from "@/images/hausbootfahrt.jpeg";
-
 export const getStaticPaths = (async ({ paginate }) => {
   const news = await getCollection("news");
 
@@ -41,7 +39,7 @@ const { page } = Astro.props;
           date={entry.data.created_at}
           excerpt={entry.data.excerpt}
           href={Boolean(entry.body) ? `/news/${entry.slug}` : undefined}
-          image={hausbootfahrt}
+          image={entry.data.image}
         />
       ))
     }
