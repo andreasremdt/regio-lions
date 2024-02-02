@@ -1,0 +1,59 @@
+- country: Schweiz
+  clubs:
+    - name: Lions Club Basel
+      href: https://basel.lionsclub.ch/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-basel.jpg?updatedAt=1706905840978
+    - name: Lions Club Basel-Spalen
+      href: https://basel-spalen.lionsclub.ch/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-basel-spalen.jpg?updatedAt=1706905840807
+    - name: Lions Club Basel-Wenkenhof
+      href: https://basel-wenkenhof.lionsclub.ch/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/leo-club-basel.jpg?updatedAt=1706905839535
+    - name: Lions Club Basel St. Alban
+      href: http://www.lions-st-alban.ch/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-basel-st-alban.jpg?updatedAt=1706905840380
+    - name: Lions Club Dorneck
+      href: https://dorneck.lionsclub.ch/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-dorneck.jpg?updatedAt=1706905842396
+    - name: Lions Club Solothurn Leimental
+      href: https://solothurnleimental.lionsclub.ch/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-solothurn-leimental.jpg?updatedAt=1706905844250
+    - name: Leo Club Basel
+      href: https://basel.leoclub.ch/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/leo-club-basel.jpg?updatedAt=1706905839535
+
+- country: Frankreich
+  clubs:
+    - name: Lions Club Altkirch Sundgau
+      href: https://de-de.facebook.com/altkirch.lions/?hc_ref=PAGES_TIMELINE&fref=nf
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-altkirch-sundgau.jpg?updatedAt=1706905841818
+    - name: Lions Club Mulhouse-Europe
+      href: http://lions-mulhouse-europe.blogspot.com/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-mulhouse-europe.jpg?updatedAt=1706905841796
+    - name: Lions Club Saint-Louis
+      href: http://www.lionsclubsl.info/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-saint-louis.jpg?updatedAt=1706905843925
+
+- country: Deutschland
+  clubs:
+    - name: Lions Club Bad Säckingen
+      href: https://www.lions-bad-saeckingen.de/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-bad-saeckingen.jpg?updatedAt=1706905841906
+    - name: Lions Club Hochschwarzwald
+      href: https://www.lionsclub-hochschwarzwald.de/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-hochschwarzwald.jpg?updatedAt=1706905841204
+    - name: Lions Club Lörrach
+      href: http://www.lc-loerrach.de/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-loerrach.jpg?updatedAt=1706905841132
+    - name: Lions Club Müllheim-Neuenburg
+      href: http://www.lc-muellheim-neuenburg.de/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-muellheim-neuenburg.jpg?updatedAt=1706905841897
+    - name: Lions Club Schliengen im Markgräflerland
+      href: http://www.lionsclub-schliengen.de/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-schliengen-im-markgraeflerland.jpg?updatedAt=1706905844005
+    - name: Lions Club Weil am Rhein
+      href: https://weil-am-rhein.lions.de/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-weil-am-rhein.jpg.jpg?updatedAt=1706905843138
+    - name: Leo Club Weil am Rhein
+      href: https://leo-club-weilamrhein.de/
+      image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/leo-club-weil-am-rhein.jpg?updatedAt=1706905839341

@@ -1,24 +1,10 @@
 ---
+import { getCollection } from "astro:content";
 import Card from "@/components/card.astro";
 import Hero from "@/components/hero.astro";
 import Layout from "@/layout/default.astro";
 
-import lionsClubBasel from "@/images/lions-club-basel.jpg";
-import lionsClubBaselSpalen from "@/images/lions-club-basel-spalen.jpg";
-import lionsClubBaselStAlban from "@/images/lions-club-basel-st-alban.jpg";
-import lionsClubDorneck from "@/images/lions-club-dorneck.jpg";
-import lionsClubSolothurnLeimental from "@/images/lions-club-solothurn-leimental.jpg";
-import leoClubBasel from "@/images/leo-club-basel.jpg";
-import lionsClubAltkirchSundgau from "@/images/lions-club-altkirch-sundgau.jpg";
-import lionsClubMulhouseEurope from "@/images/lions-club-mulhouse-europe.jpg";
-import lionsClubSaintLouis from "@/images/lions-club-saint-louis.jpg";
-import lionsClubBadSaeckingen from "@/images/lions-club-bad-saeckingen.jpg";
-import lionsClubHochschwarzwald from "@/images/lions-club-hochschwarzwald.jpg";
-import lionsClubLoerrach from "@/images/lions-club-loerrach.jpg";
-import lionsClubMuellheimNeuenburg from "@/images/lions-club-muellheim-neuenburg.jpg";
-import lionsClubSchliengenImMarkgraeflerland from "@/images/lions-club-schliengen-im-markgraeflerland.jpg";
-import lionsClubWeilAmRhein from "@/images/lions-club-weil-am-rhein.jpg.jpg";
-import leoClubWeilAmRhein from "@/images/leo-club-weil-am-rhein.jpg";
+const [clubs] = await getCollection("clubs");
 ---
 
 <Layout>
@@ -29,95 +15,23 @@ import leoClubWeilAmRhein from "@/images/leo-club-weil-am-rhein.jpg";
     amet ut!
   </Hero>
 
-  <h2 class="h2 mb-8 font-black">Schweiz</h2>
-  <div class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-4">
-    <Card
-      title="Lions Club Basel"
-      href="https://example.org"
-      image={lionsClubBasel}
-    />
-    <Card
-      title="Lions Club Basel-Spalen"
-      href="https://example.org"
-      image={lionsClubBaselSpalen}
-    />
-    <Card
-      title="Lions Club Basel St. Alban"
-      href="https://example.org"
-      image={lionsClubBaselStAlban}
-    />
-    <Card
-      title="Lions Club Dorneck"
-      href="https://example.org"
-      image={lionsClubDorneck}
-    />
-    <Card
-      title="Lions Club Solothurn Leimental"
-      href="https://example.org"
-      image={lionsClubSolothurnLeimental}
-    />
-    <Card
-      title="Leo Club Basel"
-      href="https://example.org"
-      image={leoClubBasel}
-    />
-  </div>
-
-  <h2 class="h2 mb-8 mt-16 font-black">Frankreich</h2>
-  <div class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-4">
-    <Card
-      title="Lions Club Altkirch Sundgau"
-      href="https://example.org"
-      image={lionsClubAltkirchSundgau}
-    />
-    <Card
-      title="Lions Club Mulhouse-Europe"
-      href="https://example.org"
-      image={lionsClubMulhouseEurope}
-    />
-    <Card
-      title="Lions Club Saint Louis"
-      href="https://example.org"
-      image={lionsClubSaintLouis}
-    />
-  </div>
-
-  <h2 class="h2 mb-8 mt-16 font-black">Deutschland</h2>
-  <div class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-4">
-    <Card
-      title="Lions Club Bad Säckingen"
-      href="https://example.org"
-      image={lionsClubBadSaeckingen}
-    />
-    <Card
-      title="Lions Club Hochschwarzwald"
-      href="https://example.org"
-      image={lionsClubHochschwarzwald}
-    />
-    <Card
-      title="Lions Club Lörrach"
-      href="https://example.org"
-      image={lionsClubLoerrach}
-    />
-    <Card
-      title="Lions Club Müllheim-Neuenburg"
-      href="https://example.org"
-      image={lionsClubMuellheimNeuenburg}
-    />
-    <Card
-      title="Lions Club Schliengen im Markgräflerland"
-      href="https://example.org"
-      image={lionsClubSchliengenImMarkgraeflerland}
-    />
-    <Card
-      title="Lions Club Weil am Rhein"
-      href="https://example.org"
-      image={lionsClubWeilAmRhein}
-    />
-    <Card
-      title="Leo Club Weil am Rhein"
-      href="https://example.org"
-      image={leoClubWeilAmRhein}
-    />
-  </div>
+  {
+    clubs.data.map((group) => (
+      <>
+        <h2 class="h2 mb-8 mt-16 font-black first-of-type:mt-0">
+          {group.country}
+        </h2>
+        <div class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-4">
+          {group.clubs.map((club) => (
+            <Card
+              title={club.name}
+              href={club.href}
+              image={club.image}
+              external
+            />
+          ))}
+        </div>
+      </>
+    ))
+  }
 </Layout>

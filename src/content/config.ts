@@ -17,4 +17,19 @@ export const collections = {
         .optional(),
     }),
   }),
+  clubs: defineCollection({
+    type: "data",
+    schema: z.array(
+      z.object({
+        country: z.string(),
+        clubs: z.array(
+          z.object({
+            name: z.string(),
+            href: z.string(),
+            image: z.string(),
+          }),
+        ),
+      }),
+    ),
+  }),
 };
