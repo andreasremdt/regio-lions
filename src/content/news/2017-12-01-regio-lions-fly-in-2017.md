@@ -4,6 +4,27 @@ slug: regio-lions-fly-in-2017
 excerpt: Nach 2016 in Buochs in der Innerschweiz führten die Regio Lions am 19./20. August dieses Jahres ihr zweites Aviatik-Wochenende auf dem Flugplatz Bremgarten im Breisgau durch. Organisiert wurde der Anlass durch Lion Peter Völker aus Kandern zusammen mit Lion PDG Ingo Büren aus Konstanz. Dank diesen Beiden erlebten wir auch dieses Mal wieder ein erfolgreiches Fly-in!
 published: true
 created_at: 2017-12-01
+image:
+  src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05075.jpeg?updatedAt=1707157811091
+gallery:
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05064.jpeg?updatedAt=1707157810975
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05070.jpeg?updatedAt=1707157810946
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05087.jpeg?updatedAt=1707157810866
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05099.jpeg?updatedAt=1707157810810
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05066.jpeg?updatedAt=1707157810745
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05073.jpeg?updatedAt=1707157810720
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05086.jpeg?updatedAt=1707157810628
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05096.jpeg?updatedAt=1707157810607
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05103.jpeg?updatedAt=1707157810498
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05104.jpeg?updatedAt=1707157809335
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05116.jpeg?updatedAt=1707157809262
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05128.jpeg?updatedAt=1707157809224
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05107.jpeg?updatedAt=1707157809309
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05124.jpeg?updatedAt=1707157809216
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05129.jpeg?updatedAt=1707157809151
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05111.jpeg?updatedAt=1707157809103
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05117.jpeg?updatedAt=1707157809122
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05126.jpeg?updatedAt=1707157808957
 ---
 
 Bremgarten liegt im Breisgau und das was dieser Flugplatz zu bieten hat, lässt das Fliegerherz definitiv höherschlagen. In den Hangars und auf dem Flugfeld sind seltene Oldtimer-Flugzeuge zu besichtigen, und auf dem ausgedehnten Flugfeld ist immer etwas los. Von 1968 bis 1993 war dort übrigens das Aufklärungsgeschwader 51 „Immelmann“ der Bundesluftwaffe stationiert. Ein Museum zeugt noch von dieser Zeit. Somit war der Flugplatz allen unseren Teilnehmenden gleich nach deren Ankunft sehr sympathisch und strahlte eine gewisse Vertrautheit aus.

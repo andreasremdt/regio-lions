@@ -4,6 +4,14 @@ slug: feriencamp-in-huttwil-2017
 excerpt: Das Eis schmolz schnell - Regio Lions ermöglichten trinationale Jugendbegegnungen / Ausflug zum Parc du Petit Prince und Sommercamp.
 published: true
 created_at: 2017-08-18
+image:
+  src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/Huttwil1.jpeg?updatedAt=1707158001786
+gallery:
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/Huttwil5.jpeg?updatedAt=1707158001758
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/Huttwil2.jpeg?updatedAt=1707158001644
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/Huttwil3.jpeg?updatedAt=1707158001610
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/Huttwil6.jpeg?updatedAt=1707158001603
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/Huttwil4.jpeg?updatedAt=1707158001535
 ---
 
 Es hat Tradition: In den Sommerferien geben die Regio Lions, ein Zusammenschluss mehrerer Lions Clubs aus Südbaden, Basel und dem Elsass, Jugendlichen aus den drei Ländern die Möglichkeit, sich bei einer gemeinsamen Freizeit kennenzulernen. Das Besondere dabei ist, dass das einwöchige Sommerlager auf einem Bauernhof stattfindet, in Huttwil im Emmental.

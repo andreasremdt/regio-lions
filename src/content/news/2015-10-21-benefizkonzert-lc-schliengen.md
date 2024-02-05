@@ -4,6 +4,8 @@ slug: benefizkonzert-lc-schliengen-2015
 excerpt: Am Sonntag, 25. Oktober 2015, um 17 Uhr in der Pfarrkirche St. Leodegar in Schliengen, werden die jungen hochbegabten Musiker die Zuhörer wieder mit neuen und attraktiven Stücken der anspruchsvollen zeitgenössischen Blasmusik begeistern.
 published: true
 created_at: 2015-10-21
+image:
+  src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2015/Benefiz_Schliengen2015.jpg?updatedAt=1707158291756
 ---
 
 Nach einer einleitenden, schon fast klassischen Suite des englischen Komponisten Gustav Hold, mit der er um 1920 den Arbeitern in den englischen Kohleminen und Fabriken gehobene Musik näher brachte, folgt als Highlight die Uraufführung eines eigens für das VJO komponierten Solokonzerts für vier Hörner und Blasorchester: „Humperdinck Variations“.

@@ -4,6 +4,25 @@ slug: feriencamp-in-huttwil-2022
 excerpt: Nicht nur bei emotionalen Menschen sind Tränen keine Seltenheit, und verbunden mit Lachen – also Freudestränen – sind sie etwas tolles und beeinflussen oftmals das unmittelbare Umfeld positiv durch ihre ansteckende Wirkung. Gegenteilig können Tränen auch ein Zeichen von Trauer und negativen Emotionen sein, etwa bei einem zu schnellen Ende.
 published: true
 created_at: 2022-08-28
+image:
+  src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-1.jpeg?updatedAt=1707075500239
+gallery:
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-12.jpeg?updatedAt=1707075500245
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-15.jpeg?updatedAt=1707075499773
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-13.jpeg?updatedAt=1707075499565
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-14.jpeg?updatedAt=1707075499414
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-3.jpeg?updatedAt=1707075496471
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-16.jpeg?updatedAt=1707075496427
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-2.jpeg?updatedAt=1707075495781
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-6.jpeg?updatedAt=1707075493230
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-23.jpeg?updatedAt=1707075493192
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-19.jpeg?updatedAt=1707075493180
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-21.jpeg?updatedAt=1707075492968
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-18.jpeg?updatedAt=1707075492907
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-7.jpeg?updatedAt=1707075492674
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-5.jpeg?updatedAt=1707075492311
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-20.jpeg?updatedAt=1707075491283
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-22.jpeg?updatedAt=1707075490803
 ---
 
 In der Tat flossen letztere beim diesjährigen, trinationalen Sommercamp in Huttwil in der letzten Stunde, als es hieß, Abschied zu nehmen. Abschied von einer unvergesslichen Woche voller Erinnerungen, Erlebnisse und länderübergreifender Verbundenheit, verworben mit einem Leben auf dem Bauernhof, harter Arbeit, Spiele, und dem Gefühl, etwas erreicht zu haben.

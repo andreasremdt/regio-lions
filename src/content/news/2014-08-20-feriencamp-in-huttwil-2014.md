@@ -4,6 +4,8 @@ slug: feriencamp-in-huttwil-2014
 excerpt: Was vom 2. bis zum 8. August, von Samstagmorgen bis Freitagabend, beim diesjährigen Sommercamp auf einem Bauernhof in Huttwil ablief, wird gewiss allen Teilnehmern in guter Erinnerung bleiben!
 published: true
 created_at: 2014-08-20
+image:
+  src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2014/OP_HuttwilA.jpg?updatedAt=1707158771754
 ---
 
 Einiges von dem, was die Jugendlichen erlebt haben, hatte schon Tradition. So die Tatsache, dass die Gruppe die komplette Stallarbeit übernommen hat: Ausmisten hieß es morgens ab 5:45 Uhr und abends ab 16:45 Uhr. - Eine Knochenarbeit! Vergleichsweise leicht war der Job derer, die derweil im Melkstand die Zitzenbecher anbringen und nacheinander die Milchleistung der 27 Milchkühe verfolgen durften. Routine war es beispielsweise für Jérôme aus St.Louis, der zum dritten Mal dabei war, bei der Strohernte zu helfen. An einem Nachmittag waren 338 Strohballen aufzuladen. Und am nächsten Morgen wurden sie abgeladen, via Förderband in die Scheune gebracht und dort in anstrengender Handarbeit gestapelt.

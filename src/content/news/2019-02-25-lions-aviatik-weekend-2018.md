@@ -4,11 +4,15 @@ slug: lions-aviatik-weekend-2018
 excerpt: Es war einmal eine Idee, welche PCC Pierre-Alain Ruffieux und ich nach einer Governorratssitzung besprochen haben. Sie kam auf, weil wir wissen, dass der Lions Club zahlreiche Mitglieder hat, welche sich beruflich oder im Rahmen eines Hobbys mit der Aviatik auseinandersetzen.
 published: true
 created_at: 2019-02-25
+image:
+  src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2019/aviatik19_1.jpeg?updatedAt=1707156406322
 ---
 
 Die Idee wurde in Taten umgesetzt und im Jahr 2018 wurde auf dem Flugplatz Colmar im Elsass, nach Buochs (Zentralschweiz) und Bremgarten (Süddeutschland) bereits das dritte Lions Aviatikweekend unter dem Banner der Regio-Flyers durchgeführt. Die vierte Auflage ist auch schon wieder geplant und findet am 17./18. August 2019 im Raum Zürich statt.
 
 Es war ein schöner und warmer Spätsommertag, als sich am 18. August 2018 gegen die 20 Lions Aviatiker auf dem Flugplatz Colmar-Houssen getroffen haben. Da tolles Flugwetter herrschte reisten einige auf dem Luftweg ins schöne Elsass, wie sich das für ein Aviatikwochenende gehört.
+
+![](https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2019/aviatik19_2.jpeg?updatedAt=1707156405635)
 
 Das Ziel des Lions Aviatikweekends ist der der Wissens- und Erfahrungsaustausch zwischen den Mitgliedern zu fördern, welche sich beruflich oder im Rahmen ihres Hobby’s mit der Fliegerei auseinandersetzen. Als Mitorganisator dieser Veranstaltung war ich stolz darauf, kompetente Referenten willkommen zu heissen.
 Lion Jürg Hänni (LC Bülach) beruflich bei Skyguide tätig, informierte uns über das allgegenwärtige Thema Drohnen und die Neugestaltung des Luftraums in diesem Zusammenhang. Drohnen, einerseits eine grosse Chance im Hinblick auf neue Technologien in der Zukunft, welche Lufttransporte zwischen Spitäler und vieles mehr ermöglichen. Dann aber auch Gefahren, verursacht durch kriminelle Energie oder fahrlässigem Verhalten. Daher ist es naheliegend, dass sich einerseits Massnahmen im Zusammenhang mit der Gestaltung des Luftraumes aufdrängen. Aber auch bezüglich Safety- und Security-Themen sind die Flughäfen weltweit und natürlich auch in der Schweiz gefordert (Beispiel: 36 Stunden Unterbruch Flugbetrieb infolge nicht koordinierter Drohnen mit unbekannten Piloten auf dem Flughafen London Gatwick).

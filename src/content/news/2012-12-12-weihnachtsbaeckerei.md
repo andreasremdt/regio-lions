@@ -4,6 +4,22 @@ slug: weihnachtsbaeckerei
 excerpt: Wie schon in den Vorjahren hatten Bäckermeister Klaus Kotz und seine Frau Christa die Lions Clubs Müllheim-Neuenburg und Schliengen im Markgräflerland zur Weihnachtsbäckerei eingeladen. Pünktlich und aufgeregt fanden sich am Nachmittag des 2. Advent über 40 Kinder der Clubmitglieder  und befreundeter Familien in der Backstube in der Müllheimer Unterstadt ein.
 published: true
 created_at: 2012-12-12
+image:
+  src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2012/Weih_baeck1.jpg?updatedAt=1707159333109
+gallery:
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2012/k-dsc08304.jpg?updatedAt=1707159332985
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2012/k-dsc08303.jpg?updatedAt=1707159332871
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2012/k-dsc08297.jpg?updatedAt=1707159332804
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2012/k-dsc08274.jpg?updatedAt=1707159332004
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2012/k-dsc08291.jpg?updatedAt=1707159331955
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2012/k-dsc08267.jpg?updatedAt=1707159331954
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2012/k-dsc08296.jpg?updatedAt=1707159331924
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2012/k-dsc08282.jpg?updatedAt=1707159331918
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2012/k-dsc08283.jpg?updatedAt=1707159331782
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2012/k-dsc08292.jpg?updatedAt=1707159331660
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2012/k-dsc08284.jpg?updatedAt=1707159331558
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2012/k-dsc08269.jpg?updatedAt=1707159331407
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2012/k-dsc08287.jpg?updatedAt=1707159331377
 ---
 
 Wer schon dabei war, kannte es schon, dass man zunächst mit Schuhschutz und Kopfbedeckung den hygienischen Vorschriften genügen musste. Aber dann durften die Kinder endlich an den Backtisch. Weih baeck1Die ganz Kleinen standen auf vorsorglich beschafften Plastikeimern, damit die Nase über den Tisch reichte und sie dort überhaupt fleißig mitarbeiten konnten. Nach nur kurzer Einweisung wurde der vorbereitete Teig mit großer Begeisterung ausgestochen.

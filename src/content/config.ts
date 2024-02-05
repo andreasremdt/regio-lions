@@ -15,6 +15,14 @@ export const collections = {
           caption: z.string().optional(),
         })
         .optional(),
+      gallery: z
+        .array(
+          z.object({
+            src: z.string(),
+            alt: z.string().optional(),
+          }),
+        )
+        .optional(),
     }),
   }),
   clubs: defineCollection({

@@ -4,6 +4,15 @@ slug: feriencamp-in-huttwil-2016
 excerpt: Kei Müeh mit de Chüeh - Jugendliche aus den drei Ländern arbeiten gemeinsam auf dem Bauernhof.
 published: true
 created_at: 2016-08-18
+image:
+  src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2016/Huttwil2016A.jpeg?updatedAt=1707158153978
+gallery:
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2016/Huttwil5.jpeg?updatedAt=1707158154178
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2016/Huttwil2016D.jpeg?updatedAt=1707158154158
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2016/Huttwil2016E.jpeg?updatedAt=1707158153957
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2016/Huttwil2016C.jpeg?updatedAt=1707158153941
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2016/Huttwil2016B.jpeg?updatedAt=1707158153939
+  - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2016/Huttwil2016F.jpeg?updatedAt=1707158153654
 ---
 
 Jeden Sommer veranstalten die Regio Lions ein trinationales Sommerlager auf einem Bauernhof in Huttwil. Lions Clubs aus Basel, aus Südbaden und aus dem Elsass ermöglichen es Jugendlichen aus der Schweiz, aus Deutschland und aus Frankreich, das Leben auf einem Bauernhof kennenzulernen. Bereits zum 16. Mal haben Fritz und Helen Mathys jugendliche Gäste auf ihrem Hof empfangen.

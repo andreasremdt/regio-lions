@@ -4,6 +4,8 @@ slug: hausbootfahrt-2022
 excerpt: Vier Tage unterwegs mit vier Hausbooten in Frankreich / Finanzierung durch Regio Lions und die Oberrheinkonferenz
 published: true
 created_at: 2022-06-05
+image:
+  src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/FotoRegioLions_Mai2022.JPG?updatedAt=1707075490918
 ---
 
 Am „Auffahrtswochenende“ durften 25 Jugendliche auf Einladung der Regio Lions, einem Zusammenschluss von Lions Clubs aus Südbaden, aus dem Elsass und aus Basel, gemeinsam auf große Fahrt gehen. Für alle war die Fahrt auf vier geräumigen Hausbooten der Baureihe KORMORAN auf dem Rhein-Marne-Kanal ein großartiges Erlebnis. Die jungen Leute kamen aus Basel, aus den Départements Haut-Rhin und Bas-Rhin sowie aus Weil am Rhein. Etwas ganz Besonderes war, dass es sich bei der Weiler Gruppe um Mitglieder der Bonds Big Band von der Musikschule handelte.

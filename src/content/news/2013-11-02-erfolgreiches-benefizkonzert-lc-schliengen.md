@@ -4,6 +4,8 @@ slug: erfolgreiches-benefizkonzert-lc-schliengen
 excerpt: Das hat St. Vinzenz in Liel im Laufe seiner fast 300jährigen Geschichte bestimmt noch nicht erlebt. 50 junge Musiker erzeugten mit Blasinstrumenten und Perkussion einen Lärm, der Tote hätte aufwecken können.
 published: true
 created_at: 2013-11-02
+image:
+  src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2013/konzert_schliengen.jpeg?updatedAt=1707158902044
 ---
 
 Die Heiligenfiguren aber machten gute Miene zu den ungewohnten Klängen, besänftigt von den durchweg harmonischen, bisweilen auch lyrischen Passagen. Auf Einladung der Lions spielten die im Verbandsjugendblasorchester Hochrhein zusammen geschlossenen begabtesten Jungmusiker ein Konzert der Extraklasse.

@@ -5,5 +5,5 @@ excerpt: Auch in diesem Jahr findet der Adventskalender des Lions Club Schliegen
 published: true
 created_at: 2023-12-01
 image:
-  src: https://ik.imagekit.io/6uqkzvybwk/default-image.jpg?updatedAt
+  src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2023/Adventskalender2023_page-0001.jpg?updatedAt=1707075501326
 ---
