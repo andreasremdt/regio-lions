@@ -4,7 +4,7 @@ import Card from "@/components/card.astro";
 import Hero from "@/components/hero.astro";
 import Layout from "@/layout/default.astro";
 
-const [clubs] = await getCollection("clubs");
+const countries = await getCollection("clubs");
 ---
 
 <Layout>
@@ -16,13 +16,13 @@ const [clubs] = await getCollection("clubs");
   </Hero>
 
   {
-    clubs.data.map((group) => (
+    countries.map((country) => (
       <>
         <h2 class="h2 mb-8 mt-16 font-black first-of-type:mt-0">
-          {group.country}
+          {country.data.name}
         </h2>
         <div class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-4">
-          {group.clubs.map((club) => (
+          {country.data.clubs.map((club) => (
             <Card
               title={club.name}
               href={club.href}

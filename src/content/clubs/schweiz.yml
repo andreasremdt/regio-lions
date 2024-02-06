@@ -1,0 +1,23 @@
+name: Schweiz
+clubs:
+  - name: Lions Club Basel
+    href: https://basel.lionsclub.ch/
+    image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-basel.jpg?updatedAt=1706905840978
+  - name: Lions Club Basel-Spalen
+    href: https://basel-spalen.lionsclub.ch/
+    image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-basel-spalen.jpg?updatedAt=1706905840807
+  - name: Lions Club Basel-Wenkenhof
+    href: https://basel-wenkenhof.lionsclub.ch/
+    image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/leo-club-basel.jpg?updatedAt=1706905839535
+  - name: Lions Club Basel St. Alban
+    href: http://www.lions-st-alban.ch/
+    image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-basel-st-alban.jpg?updatedAt=1706905840380
+  - name: Lions Club Dorneck
+    href: https://dorneck.lionsclub.ch/
+    image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-dorneck.jpg?updatedAt=1706905842396
+  - name: Lions Club Solothurn Leimental
+    href: https://solothurnleimental.lionsclub.ch/
+    image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/lions-club-solothurn-leimental.jpg?updatedAt=1706905844250
+  - name: Leo Club Basel
+    href: https://basel.leoclub.ch/
+    image: https://ik.imagekit.io/6uqkzvybwk/regio-lions/clubs/leo-club-basel.jpg?updatedAt=1706905839535
