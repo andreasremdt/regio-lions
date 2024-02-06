@@ -1,16 +1,10 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import Card from "@/components/card.astro";
 import Layout from "@/layout/default.astro";
 import { getNews } from "@/lib/utils";
 
-import frontPage1 from "@/images/front-page-1.jpg";
-import frontPage2 from "@/images/front-page-2.jpg";
-import frontPage3 from "@/images/front-page-3.jpg";
-import frontPage4 from "@/images/front-page-4.jpg";
-import frontPage5 from "@/images/front-page-5.jpg";
-
-const news = await getNews();
+const news = await getNews(3);
 ---
 
 <Layout>
@@ -32,42 +26,57 @@ const news = await getNews();
     </a>
 
     <div
-      class="right-0 mt-8 flex gap-8 md:absolute md:top-40 md:mt-0 md:w-2/5 lg:top-12"
+      class="right-0 mt-8 flex gap-4 md:absolute md:top-40 md:mt-0 md:w-2/5 md:gap-8 lg:top-48"
     >
       <div class="pt-72">
-        <Image
-          src={frontPage1}
+        <Picture
+          src="https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/Huttwil2022-1.jpeg?updatedAt=1707159927735"
+          formats={["avif", "webp"]}
+          alt="gruppenfoto der teilnehmer des sommercamps 2022 vor einem tiergehege"
+          width={300}
+          height={350}
+          quality={80}
           class="aspect-[1/1.5] rounded-xl object-cover shadow-lg"
-          alt="placeholder image for later purposes"
-          height="350"
         />
       </div>
       <div class="pt-40">
-        <Image
-          src={frontPage2}
-          class="mb-8 aspect-[1/1.5] rounded-xl object-cover shadow-lg"
-          alt="placeholder image for later purposes"
-          height="350"
+        <Picture
+          src="https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2021/Foto_20N.jpeg?updatedAt=1707076188481"
+          formats={["avif", "webp"]}
+          alt="hausboot während der fahrt auf einem kanal"
+          width={300}
+          height={350}
+          quality={80}
+          class="mb-4 aspect-[1/1.5] rounded-xl object-cover shadow-lg md:mb-8"
         />
-        <Image
-          src={frontPage3}
+        <Picture
+          src="https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2021/ebsj2018_selektion_pk_-_52.jpg?updatedAt=1707076145325"
+          formats={["avif", "webp"]}
+          alt="menschenmenge in basel vor einer konzertbühne"
+          width={300}
+          height={350}
+          quality={80}
           class="aspect-[1/1.5] rounded-xl object-cover shadow-lg"
-          alt="placeholder image for later purposes"
-          height="350"
         />
       </div>
       <div>
-        <Image
-          src={frontPage4}
-          class="mb-8 aspect-[1/1.5] rounded-xl object-cover shadow-lg"
-          alt="placeholder image for later purposes"
-          height="350"
+        <Picture
+          src="https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2019/A_20Gruppenfoto_20vor_20dem_20Dom.jpeg?updatedAt=1707156168025"
+          formats={["avif", "webp"]}
+          alt="gruppe von kindern in einer höhle im parc l'eclere"
+          width={300}
+          height={350}
+          quality={80}
+          class="mb-4 aspect-[1/1.5] rounded-xl object-cover shadow-lg md:mb-8"
         />
-        <Image
-          src={frontPage5}
-          class="aspect-[1/1.5] rounded-xl object-cover shadow-lg"
-          alt="placeholder image for later purposes"
-          height="350"
+        <Picture
+          src="https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/DSC05075.jpeg?updatedAt=1707157811091"
+          formats={["avif", "webp"]}
+          alt="flugzeug auf rollfeld vor dunklen wolken"
+          width={300}
+          height={350}
+          quality={80}
+          class="mb-8 aspect-[1/1.5] rounded-xl object-cover shadow-lg"
         />
       </div>
     </div>
@@ -118,12 +127,14 @@ const news = await getNews();
     </div>
   </section>
 
-  <Image
-    src={frontPage4}
-    alt="placeholder image for later purposes"
-    width="1200"
-    height="450"
-    class="max-h-[450px] w-full rounded-xl object-cover object-top shadow-lg"
+  <Picture
+    src="https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/Huttwil1.jpeg?updatedAt=1707158001786"
+    formats={["avif", "webp"]}
+    alt="gruppenfoto der teilnehmer eines sommercamps auf einem berg mit trotinets"
+    width={1300}
+    height={700}
+    quality={80}
+    class="max-h-[450px] w-full rounded-xl object-cover object-center shadow-lg"
   />
 
   <section class="py-16 md:py-32 lg:py-48">
@@ -177,20 +188,14 @@ const news = await getNews();
 
     <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
       {
-        news
-          .filter((entry) => Boolean(entry.body))
-          .sort(
-            (a, b) => b.data.created_at.getTime() - a.data.created_at.getTime(),
-          )
-          .slice(0, 3)
-          .map((entry) => (
-            <Card
-              title={entry.data.title}
-              date={entry.data.created_at}
-              href={`/news/${entry.slug}`}
-              image={entry.data.image?.src}
-            />
-          ))
+        news.map((entry) => (
+          <Card
+            title={entry.data.title}
+            date={entry.data.created_at}
+            href={`/news/${entry.slug}`}
+            image={entry.data.image?.src}
+          />
+        ))
       }
     </div>
 
@@ -208,16 +213,18 @@ const news = await getNews();
       als Gemeinschaft Erfolg haben.
     </p>
 
-    <div class="grid grid-cols-1 gap-16 md:grid-cols-2">
-      <Image
-        src={frontPage1}
-        alt="placeholder image for later purposes"
-        width="500"
-        height="600"
-        class="h-full rounded-xl object-cover shadow-lg"
+    <div class="gap-16 md:flex">
+      <Picture
+        src="https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2014/vitra_0.jpg?updatedAt=1707158771718"
+        formats={["avif", "webp"]}
+        alt="gruppenfoto der regio lions mit banner vor dem vitrahaus in weil am rhein"
+        width={800}
+        height={600}
+        quality={80}
+        class="mb-16 rounded-xl shadow-lg md:mb-0"
       />
 
-      <ul class="ml-4 list-disc space-y-6 lg:mt-16">
+      <ul class="ml-4 list-disc space-y-6">
         <li>
           Jeder Lions Club beteiligt sich mit 500€ am Sponsoring oder Patronat
           des 3-Länderlaufes.
