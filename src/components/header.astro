@@ -1,6 +1,5 @@
 ---
-import { Image } from "astro:assets";
-import logo from "@/images/logo.png";
+import { Picture } from "astro:assets";
 ---
 
 <header
@@ -10,11 +9,13 @@ import logo from "@/images/logo.png";
     href="/"
     class="rounded-md focus-visible:bg-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
   >
-    <Image
-      src={logo}
-      alt="logo der region lions"
-      width="250"
-      height="194"
+    <Picture
+      src="https://ik.imagekit.io/6uqkzvybwk/regio-lions/logo.png?updatedAt=1707247965694"
+      formats={["avif", "webp"]}
+      alt=""
+      width={250}
+      height={194}
+      quality={100}
       loading="eager"
       class="w-24 md:w-32"
     />
