@@ -31,7 +31,7 @@ const { Content } = await entry.render();
             width={1200}
             quality={80}
             height={800}
-            class="mb-4 max-h-[800px] w-full rounded-xl object-cover shadow-lg"
+            class="mb-4 aspect-[3/2] w-full rounded-xl object-cover object-center shadow-lg"
           />
 
           {entry.data.image.caption ? (
@@ -58,62 +58,38 @@ const { Content } = await entry.render();
       ) : null
     }
 
-    <div class="prose max-w-none">
+    <div class="prose max-w-none prose-img:rounded-xl prose-img:shadow-xl">
       <Content />
     </div>
 
-    <!-- <figure class="my-6 md:-mx-24 md:my-12 lg:-mx-32">
-      <img
-        src="https://placehold.co/500x300"
-        alt="placeholder image for later purposes"
-        width="500"
-        height="300"
-        class="w-full rounded-xl shadow-lg"
-      />
-    </figure> -->
-
-    <figure
-      class="mt-6 grid grid-cols-2 gap-4 md:mt-12 md:grid-cols-3 md:gap-8"
-    >
-      <img
-        src="https://placehold.co/500x400"
-        alt="placeholder image for later purposes"
-        width="500"
-        height="400"
-        class="rounded-xl shadow-lg"
-      />
-
-      <img
-        src="https://placehold.co/500x400"
-        alt="placeholder image for later purposes"
-        width="500"
-        height="400"
-        class="rounded-xl shadow-lg"
-      />
-
-      <img
-        src="https://placehold.co/500x400"
-        alt="placeholder image for later purposes"
-        width="500"
-        height="400"
-        class="rounded-xl shadow-lg"
-      />
-
-      <img
-        src="https://placehold.co/500x400"
-        alt="placeholder image for later purposes"
-        width="500"
-        height="400"
-        class="rounded-xl shadow-lg"
-      />
-
-      <img
-        src="https://placehold.co/500x400"
-        alt="placeholder image for later purposes"
-        width="500"
-        height="400"
-        class="rounded-xl shadow-lg"
-      />
-    </figure>
+    {
+      entry.data.gallery ? (
+        <figure class="mt-6 grid grid-cols-2 gap-4 md:mt-12 md:grid-cols-3 md:gap-8">
+          {entry.data.gallery.map((image) => (
+            <a
+              href={image.src}
+              data-fancybox="gallery"
+              class="group overflow-hidden rounded-xl bg-primary-200 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary-200"
+            >
+              <Picture
+                src={image.src}
+                formats={["avif", "webp"]}
+                alt={image.alt || ""}
+                width={400}
+                height={350}
+                quality={80}
+                class="aspect-[4/3] object-cover shadow-lg transition-opacity group-hover:opacity-60 group-focus:opacity-60 "
+              />
+            </a>
+          ))}
+        </figure>
+      ) : null
+    }
   </div>
 </Layout>
+
+<script>
+  import { Fancybox } from "@fancyapps/ui";
+
+  Fancybox.bind("[data-fancybox]");
+</script>
