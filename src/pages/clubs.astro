@@ -9,18 +9,15 @@ const countries = await getCollection("clubs");
 
 <Layout>
   <Hero title="Teilnehmende Clubs">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor esse
-    tenetur, blanditiis excepturi minus expedita labore distinctio. Odio cumque
-    maiores aliquid consectetur aliquam labore quidem asperiores magni culpa,
-    amet ut!
+    Derzeit zählen wir 17 Clubs zu unserer Gemeinschaft. Jeder Club bringt sich
+    mit individuellen Ideen und Einsatzbereitschaft seiner Mitglieder ein und
+    hilft uns bei der Umsetzung unserer Ziele.
   </Hero>
 
   {
     countries.map((country) => (
       <>
-        <h2 class="h2 mb-8 mt-16 font-black first-of-type:mt-0">
-          {country.data.name}
-        </h2>
+        <h2 class="h2 mb-8 mt-16 first-of-type:mt-0">{country.data.name}</h2>
         <div class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-4">
           {country.data.clubs.map((club) => (
             <Card
