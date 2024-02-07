@@ -4,7 +4,7 @@ import Card from "@/components/card.astro";
 import Layout from "@/layout/default.astro";
 import { getNews } from "@/lib/utils";
 
-const news = await getNews(3);
+let news = await getNews(3);
 ---
 
 <Layout>

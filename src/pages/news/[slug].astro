@@ -5,7 +5,7 @@ import Layout from "@/layout/default.astro";
 import { getNews } from "@/lib/utils";
 
 export async function getStaticPaths() {
-  const news = await getNews();
+  let news = await getNews();
 
   return news.map((entry) => ({
     params: { slug: entry.slug },
@@ -13,8 +13,8 @@ export async function getStaticPaths() {
   }));
 }
 
-const { entry } = Astro.props;
-const { Content } = await entry.render();
+let { entry } = Astro.props;
+let { Content } = await entry.render();
 ---
 
 <Layout>

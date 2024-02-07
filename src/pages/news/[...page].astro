@@ -6,13 +6,13 @@ import Pagination from "@/components/pagination.astro";
 import Layout from "@/layout/default.astro";
 import { getNews } from "@/lib/utils";
 
-export const getStaticPaths = (async ({ paginate }) => {
-  const news = await getNews();
+export let getStaticPaths = (async ({ paginate }) => {
+  let news = await getNews();
 
   return paginate(news, { pageSize: 6 });
 }) satisfies GetStaticPaths;
 
-const { page } = Astro.props;
+let { page } = Astro.props;
 ---
 
 <Layout>

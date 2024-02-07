@@ -1,6 +1,6 @@
 import { defineCollection, z } from "astro:content";
 
-export const collections = {
+export let collections = {
   news: defineCollection({
     type: "content",
     schema: z.object({

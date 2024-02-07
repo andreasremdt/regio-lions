@@ -5,7 +5,7 @@ interface Props {
   page: Page;
 }
 
-const { page } = Astro.props;
+let { page } = Astro.props;
 ---
 
 <nav class="flex items-center justify-end gap-x-2">

@@ -4,7 +4,7 @@ import Card from "@/components/card.astro";
 import Hero from "@/components/hero.astro";
 import Layout from "@/layout/default.astro";
 
-const countries = await getCollection("clubs");
+let countries = await getCollection("clubs");
 ---
 
 <Layout>

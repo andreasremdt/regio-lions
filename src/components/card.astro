@@ -10,7 +10,7 @@ interface Props {
   external?: boolean;
 }
 
-const { title, date, image, href, external } = Astro.props;
+let { title, date, image, href, external } = Astro.props;
 ---
 
 <article
