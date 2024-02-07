@@ -2,6 +2,8 @@ import type { APIRoute } from "astro";
 import { z } from "astro:content";
 import { escapeHtml, getEmailTemplate } from "@/lib/utils";
 
+export const prerender = false;
+
 let schema = z.object({
   firstname: z
     .string({
