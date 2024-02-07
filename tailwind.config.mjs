@@ -9,6 +9,15 @@ export default {
       fontFamily: {
         sans: ["Roboto", ...theme.fontFamily.sans],
       },
+      keyframes: {
+        "fade-in": {
+          "0%": { opacity: 0, translate: "1.5rem 0" },
+          "100%": { opacity: 1, translate: "0 0" },
+        },
+      },
+      animation: {
+        "fade-in": "fade-in 0.3s ease-out forwards",
+      },
       colors: {
         primary: {
           50: "#ebf7ff",
@@ -22,19 +31,6 @@ export default {
           800: "#0041d7",
           900: "#00338d",
           950: "#062665",
-        },
-        secondary: {
-          50: "#fffee7",
-          100: "#fffcc1",
-          200: "#fff686",
-          300: "#ffe841",
-          400: "#ffd60d",
-          500: "#ebb700",
-          600: "#d19100",
-          700: "#a66702",
-          800: "#89500a",
-          900: "#74410f",
-          950: "#442104",
         },
       },
     },
