@@ -1,0 +1,18 @@
+---
+import Hero from "@/components/hero.astro";
+import Layout from "@/layout/default.astro";
+---
+
+<Layout
+  title="Seite nicht gefunden"
+  description="Die gewünschte Seite existiert nicht."
+>
+  <Hero title="Seite nicht gefunden">
+    Die von Ihnen gewünschte Seite konnte nicht gefunden werden. Bitte
+    vergewissern Sie sich, das die URL stimmt. Eventuell wurde die Seite / der
+    Beitrag auch gelöscht. Mit einem Klick auf die unten sichtbare Schaltfläche
+    gelangen Sie auf die Startseite zurück.
+  </Hero>
+
+  <a class="btn btn-primary" href="/">&larr; Zur Startseite</a>
+</Layout>
