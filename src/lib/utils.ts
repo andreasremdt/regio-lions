@@ -8,11 +8,11 @@ export function formatDate(date: Date) {
   }).format(date);
 }
 
-export async function getNews(limit = Infinity) {
+export async function getNews(needsBody = false, limit = Infinity) {
   let news = await getCollection("news");
 
   return news
-    .filter((entry) => Boolean(entry.body))
+    .filter((entry) => (needsBody ? Boolean(entry.body) : true))
     .sort((a, b) => b.data.created_at.getTime() - a.data.created_at.getTime())
     .slice(0, limit);
 }

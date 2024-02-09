@@ -5,7 +5,7 @@ import Layout from "@/layout/default.astro";
 import { getNews } from "@/lib/utils";
 
 export async function getStaticPaths() {
-  let news = await getNews();
+  let news = await getNews(true);
 
   return news.map((entry) => ({
     params: { slug: entry.slug },
@@ -31,7 +31,7 @@ let { Content } = await entry.render();
             width={1200}
             quality={80}
             height={800}
-            class="mb-4 aspect-[3/2] w-full rounded-xl object-cover object-center shadow-lg"
+            class="mb-4 w-full rounded-xl object-cover object-center shadow-lg"
           />
 
           {entry.data.image.caption ? (
@@ -58,7 +58,9 @@ let { Content } = await entry.render();
       ) : null
     }
 
-    <div class="prose max-w-none prose-img:rounded-xl prose-img:shadow-xl">
+    <div
+      class="prose max-w-none prose-img:rounded-xl prose-img:shadow-xl prose-video:w-full prose-video:rounded-xl prose-video:shadow-xl"
+    >
       <Content />
     </div>
 

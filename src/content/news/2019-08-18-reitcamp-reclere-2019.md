@@ -24,10 +24,12 @@ Gleich nach der Ankunft und der Einnahme des ersten gemeinsamen Mittagessens kon
 
 Wieder am Tageslicht, ging es zum ersten Mal zum Reiten. An den ersten vier Tagen stand nämlich jeweils ein dreistündiger „Pferde-Workshop“ auf dem Programm. Von Anfang an klappte die Zusammenarbeit der 10- bis 15-Jährigen aus den drei Ländern sehr gut. Mal saßen die acht Kinder aus dem Elsass auf den Pferden und die Kinder aus Deutschland und aus der Schweiz führten die Pferde, und mal war es dann umgekehrt.
 
+![](https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2023/Logo%20ORK.jpg?updatedAt=1707075922650)
+
 Zwei Mal konnten die Kinder den weitläufigen Dinosaurierpark erkunden. Gut ist hier, dass es auf allen Schautafeln ausführliche Informationen in deutscher und französischer Sprache gibt. Für Abwechslungen sorgten im Dinopark das Erklimmen eines Aussichtsturms und das gemeinsame Begehen einer Hängebrücke.
 
 Die Gruppe hatte das Glück, dass sie an einem Abend zu einer Zirkusvorstellung im Restaurant „Les Grottes“ eingeladen wurde. Von Anfang an geplant war dagegen, dass sie am letzten Abend die Bekanntschaft mit dem Duo Tina & Jo machen durfte. Mit ihrem Programm „Sing with us“ schafften es die beiden, alle zu begeistern. Die meisten Kinder klatschten freudig mit und nach und nach konnten dank der ausgeteilten Liedtexte immer mehr die Hits der 60er und 70er Jahre mitsingen.
 
 Erwähnenswert sind auch die ganz besonderen Unterkünfte. Die Kinder und die beiden Betreuer waren in sechs adretten Holzbungalows mit dreieckigem Querschnitt untergebracht. Für das Kochen und Essen stand ein großes Partyzelt mit Tischen und Bänken zur Verfügung.
 
-Möglich wurde die Finanzierung dieses Reitcamps, das wie alle von den Regio Lions angebotenen trinationalen Freizeiten für Jugendliche aus den drei Ländern kostenlos angeboten wurde, durch die Unterstützung der Deutsch-Französisch-Schweizerischen Oberrheinkonferenz (ORK). Die ORK übernahm 65 Prozent der Gesamtkosten.
+Möglich wurde die Finanzierung dieses Reitcamps, das wie alle von den Regio Lions angebotenen trinationalen Freizeiten für Jugendliche aus den drei Ländern kostenlos angeboten wurde, durch die Unterstützung der [Deutsch-Französisch-Schweizerischen Oberrheinkonferenz (ORK)](https://www.oberrheinkonferenz.org/de/home.html). Die ORK übernahm 65 Prozent der Gesamtkosten.

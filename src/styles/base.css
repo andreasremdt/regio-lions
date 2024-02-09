@@ -4,6 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  iframe {
+    @apply aspect-video h-auto w-full rounded-xl shadow-xl;
+  }
+}
+
 @layer components {
   .btn {
     @apply inline-flex h-12 items-center rounded-md border-2 px-6 font-medium transition-colors focus-visible:outline-none focus-visible:ring-4 disabled:pointer-events-none disabled:cursor-not-allowed;

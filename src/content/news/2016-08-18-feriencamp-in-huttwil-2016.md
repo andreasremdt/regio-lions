@@ -6,6 +6,7 @@ published: true
 created_at: 2016-08-18
 image:
   src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2016/Huttwil2016A.jpeg?updatedAt=1707158153978
+  caption: "Highlight beim Regio-Lions-Sommercamp 2016: Pianist Nico Elble begeistert Jung und Alt beim Konzert in der Scheune."
 gallery:
   - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2016/Huttwil5.jpeg?updatedAt=1707158154178
   - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2016/Huttwil2016D.jpeg?updatedAt=1707158154158

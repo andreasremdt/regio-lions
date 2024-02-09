@@ -6,6 +6,7 @@ published: true
 created_at: 2022-06-05
 image:
   src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2022/FotoRegioLions_Mai2022.JPG?updatedAt=1707075490918
+  caption: Die Junior-Edition der Bonds Big Band bei ihrem Konzert im Hafen von Saverne. Auf Einladung der Regio Lions durften sie gemeinsam mit Jugendlichen aus dem Elsass und aus Basel an einer viertägigen Hausbootfahrt auf dem Rhein-Marne-Kanal teilnehmen.
 ---
 
 Am „Auffahrtswochenende“ durften 25 Jugendliche auf Einladung der Regio Lions, einem Zusammenschluss von Lions Clubs aus Südbaden, aus dem Elsass und aus Basel, gemeinsam auf große Fahrt gehen. Für alle war die Fahrt auf vier geräumigen Hausbooten der Baureihe KORMORAN auf dem Rhein-Marne-Kanal ein großartiges Erlebnis. Die jungen Leute kamen aus Basel, aus den Départements Haut-Rhin und Bas-Rhin sowie aus Weil am Rhein. Etwas ganz Besonderes war, dass es sich bei der Weiler Gruppe um Mitglieder der Bonds Big Band von der Musikschule handelte.
@@ -13,6 +14,8 @@ Am „Auffahrtswochenende“ durften 25 Jugendliche auf Einladung der Regio Lion
 Die Unternehmung klappte so, wie es sich der Organisator aus dem Lions Club Weil am Rhein und die vier jungen Erwachsenen aus dem Weiler Leo-Club, die als Freizeitkapitäne fungierten, vorgestellt hatten. Mit intensiver Gemeinschaftsarbeit wurden von Donnerstagmittag bis Sonntagabend das imposante Schiffshebewerk von Arzviller und 13 Schleusen auf dem Rhein-Marne-Kanal zwischen Niderviller und Saverne passiert, erst talwärts und auf dem Rückweg bergwärts. Zum Freizeitprogramm gehörten sportliche Betätigungen in einer Outdoor-Fitness-Arena, rasante Fahrten auf einer Rodelbahn, ein längerer Aufenthalt in einem Hallenbad mit Wasserrutsche, eine nächtliche Fackelwanderung zu einer Burgruine und der Besuch einer Glasbläservorführung.
 
 Die Verständigung untereinander klappte bestens, auch deshalb weil die Jugendlichen aus dem Elsass aus Familien stammten, in denen sowohl Französisch als auch Deutsch gesprochen wird.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/HsWf2P8w-Qo?si=GWtZBgjMq-wn8T1C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Kein Problem war es, gemeinsam zu kochen. Und, ganz wichtig: Das abwechslungsreich zusammengestellte und in einer großen Paella-Pfanne zubereitete Essen schmeckte allen gut! Das Wetter war so schön, dass immer draußen gegessen werden konnte.
 Unumstrittene Höhepunkte waren die beiden Konzerte der Bonds Big Band am Samstagmittag bzw. am Sonntagmorgen. Unter der Leitung von Christian Leitherer begeisterten die jungen Musiker mit ihren Darbietungen im Hafen von Saverne sowie vor der Kristallschleiferei Lehrer beim Schiffshebewerk von Arzviller. Die Musikinstrumente wurden vom Bandleader sowie von Eltern in Begleitfahrzeugen transportiert.

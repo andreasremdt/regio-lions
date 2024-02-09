@@ -6,6 +6,7 @@ published: true
 created_at: 2017-08-18
 image:
   src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/Huttwil1.jpeg?updatedAt=1707158001786
+  caption: Das obligatorische Gruppenfoto. Mit Trottinetts startklar auf dem Berg Ahorn.
 gallery:
   - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/Huttwil5.jpeg?updatedAt=1707158001758
   - src: https://ik.imagekit.io/6uqkzvybwk/regio-lions/news/2017/Huttwil2.jpeg?updatedAt=1707158001644
