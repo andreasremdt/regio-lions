@@ -15,7 +15,10 @@ export let getStaticPaths = (async ({ paginate }) => {
 let { page } = Astro.props;
 ---
 
-<Layout>
+<Layout
+  title="News"
+  description="Lernen Sie mehr über das was wir machen. Auf dieser Seite finden Sie eine Historie unserer finanzierten oder selbst durchgeführten Aktivitäten"
+>
   <Hero title="Aktuelle News">
     Lernen Sie mehr über das was wir machen. Auf dieser Seite finden Sie eine
     Historie unserer finanzierten oder selbst durchgeführten Aktivitäten, etwa
