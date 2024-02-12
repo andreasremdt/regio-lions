@@ -3,7 +3,7 @@ import type { GetStaticPaths } from "astro";
 import Hero from "@/components/hero.astro";
 import NewsPreview from "@/components/news-preview.astro";
 import Pagination from "@/components/pagination.astro";
-import Layout from "@/layout/default.astro";
+import Layout from "@/layouts/default.astro";
 import { getNews } from "@/lib/utils";
 
 export let getStaticPaths = (async ({ paginate }) => {

@@ -1,7 +1,7 @@
 ---
 import { Picture } from "astro:assets";
 import Card from "@/components/card.astro";
-import Layout from "@/layout/default.astro";
+import Layout from "@/layouts/default.astro";
 import { getNews } from "@/lib/utils";
 
 let news = await getNews(true, 3);
