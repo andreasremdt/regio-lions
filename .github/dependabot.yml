@@ -6,6 +6,8 @@ updates:
       interval: "weekly"
     assignees:
       - "andreasremdt"
+    reviewers:
+      - "andreasremdt"
     commit-message:
       prefix: "deps"
     open-pull-requests-limit: 10
