@@ -8,9 +8,10 @@ interface Props {
   date?: Date;
   image?: string;
   external?: boolean;
+  loading?: "eager" | "lazy";
 }
 
-let { title, date, image, href, external } = Astro.props;
+let { title, date, image, href, external, loading = "lazy" } = Astro.props;
 ---
 
 <article
@@ -25,6 +26,7 @@ let { title, date, image, href, external } = Astro.props;
         width={400}
         quality={80}
         height={400}
+        loading={loading}
         class="aspect-square h-full w-full object-cover transition-transform duration-500 group-hover:scale-110 sm:max-h-none"
       />
     ) : (

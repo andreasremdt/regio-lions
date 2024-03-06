@@ -22,11 +22,12 @@ let countries = await getCollection("clubs");
       <>
         <h2 class="h2 mb-8 mt-16 first-of-type:mt-0">{country.data.name}</h2>
         <div class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8 lg:grid-cols-4">
-          {country.data.clubs.map((club) => (
+          {country.data.clubs.map((club, index) => (
             <Card
               title={club.name}
               href={club.href}
               image={club.image}
+              loading={index < 6 ? "eager" : "lazy"}
               external
             />
           ))}
