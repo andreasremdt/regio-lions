@@ -5,22 +5,16 @@ import { Picture } from "astro:assets";
 <header
   class="relative mx-auto flex max-w-7xl items-center justify-between px-4 py-4 before:absolute before:-top-1/2 before:bottom-32 before:right-0 before:-z-10 before:aspect-square before:w-48 before:rounded-full before:bg-purple-100 before:blur-3xl md:px-8 md:py-8"
 >
-  <a
-    href="/"
-    aria-label="home"
-    class="rounded-md focus-visible:bg-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
-  >
-    <Picture
-      src="https://ik.imagekit.io/6uqkzvybwk/regio-lions/logo.png?updatedAt=1707247965694"
-      formats={["avif", "webp"]}
-      alt=""
-      width={250}
-      height={194}
-      quality={100}
-      loading="eager"
-      class="w-24 md:w-32"
-    />
-  </a>
+  <Picture
+    src="https://ik.imagekit.io/6uqkzvybwk/regio-lions/logo.png?updatedAt=1707247965694"
+    formats={["avif", "webp"]}
+    alt=""
+    width={250}
+    height={194}
+    quality={100}
+    loading="eager"
+    class="w-24 rounded-md md:w-32"
+  />
 
   <button
     type="button"
@@ -53,6 +47,7 @@ import { Picture } from "astro:assets";
   </button>
 
   <nav
+    aria-label="seitennavigation"
     class="pointer-events-none fixed inset-0 z-10 flex h-screen w-full flex-col justify-center gap-8 bg-white p-12 text-xl opacity-0 transition-opacity md:pointer-events-auto md:static md:h-auto md:w-auto md:flex-row md:bg-transparent md:p-0 md:text-base md:opacity-100"
     data-action="menu"
     id="menu"

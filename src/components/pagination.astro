@@ -14,6 +14,7 @@ let { page } = Astro.props;
     page.url.prev ? (
       <a
         href={page.url.prev}
+        rel="prev"
         class="btn btn-primary"
         title={`Gehe zu Seite ${page.currentPage - 1}`}
       >
@@ -25,6 +26,7 @@ let { page } = Astro.props;
     page.url.next ? (
       <a
         href={page.url.next}
+        rel="next"
         class="btn btn-primary"
         title={`Gehe zu Seite ${page.currentPage + 1}`}
       >

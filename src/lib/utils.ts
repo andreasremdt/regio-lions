@@ -60,3 +60,11 @@ export function getEmailTemplate({
     <p>Sie können dem Absender schreiben in dem Sie direkt auf diese E-Mail antworten.</p>
   `;
 }
+
+export function trimDescription(text: string) {
+  if (text.length > 150) {
+    return `${text.slice(0, 147)}...`;
+  }
+
+  return text;
+}
