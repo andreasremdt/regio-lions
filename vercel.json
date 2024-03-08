@@ -8,7 +8,7 @@
         { "key": "Referrer-Policy", "value": "same-origin" },
         {
           "key": "Permissions-Policy",
-          "value": "accelerometer=(), microphone=(), geolocation=(), autoplay=(), camera=(), fullscreen=('self'), gyroscope=(), interest-cohort=(), magnetometer=(), payment=(), sync-xhr=('self')"
+          "value": "accelerometer=(), microphone=(), geolocation=(), autoplay=(), camera=(), fullscreen=(self), gyroscope=(), interest-cohort=(), magnetometer=(), payment=(), sync-xhr=(self)"
         },
         {
           "key": "Content-Security-Policy",
