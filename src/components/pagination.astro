@@ -8,7 +8,7 @@ interface Props {
 let { page } = Astro.props;
 ---
 
-<nav class="flex items-center justify-end gap-x-2">
+<nav class="flex items-center justify-end gap-x-2 print:hidden">
   <p class="mr-6">Seite {page.currentPage} von {page.lastPage}</p>
   {
     page.url.prev ? (
