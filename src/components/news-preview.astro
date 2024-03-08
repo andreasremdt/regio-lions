@@ -18,7 +18,11 @@ interface Props {
 let { title, date, image, excerpt, href } = Astro.props;
 ---
 
-<article class="flex flex-col gap-6 lg:flex-row lg:gap-12">
+<article
+  class="flex flex-col gap-6 lg:flex-row lg:gap-12"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
   {
     image ? (
       <Picture
@@ -28,7 +32,10 @@ let { title, date, image, excerpt, href } = Astro.props;
         width={300}
         quality={80}
         height={300}
-        class="h-64 w-full rounded-xl object-cover shadow-lg lg:aspect-square lg:h-auto"
+        itemtype="https://schema.org/ImageObject"
+        itemscope
+        itemprop="thumbnail"
+        class="roun ded-xl h-64 w-full object-cover shadow-lg lg:aspect-square lg:h-auto"
         pictureAttributes={{ class: "w-full lg:max-w-72" }}
       />
     ) : (
@@ -37,19 +44,20 @@ let { title, date, image, excerpt, href } = Astro.props;
   }
   <div class="flex flex-1 flex-col items-start">
     <time
+      itemprop="datePublished"
       datetime={date.toISOString()}
       class="text-sm text-gray-500 dark:text-gray-400">{formatDate(date)}</time
     >
-    <h2 class="h4 mb-6 mt-1">
+    <h2 class="h4 mb-6 mt-1" itemprop="headline">
       {title}
     </h2>
-    <p class="mb-6">
+    <p class="mb-6" itemprop="abstract">
       {excerpt}
     </p>
 
     {
       href ? (
-        <a href={href} class="btn btn-secondary mt-auto lg:mt-0">
+        <a href={href} class="btn btn-secondary mt-auto lg:mt-0" itemprop="url">
           {" "}
           Weiterlesen &rarr;{" "}
         </a>

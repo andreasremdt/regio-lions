@@ -1,16 +1,17 @@
 ---
+import type { HTMLAttributes } from "astro/types";
 import Header from "@/components/header.astro";
 import Footer from "@/components/footer.astro";
 import { trimDescription } from "@/lib/utils";
 import "@/styles/base.css";
 
-interface Props {
+interface Props extends HTMLAttributes<"main"> {
   title: string;
   description: string;
   image?: string;
 }
 
-const { title, description, image } = Astro.props;
+const { title, description, image, ...props } = Astro.props;
 ---
 
 <html lang="de" class="scroll-smooth" dir="ltr">
@@ -40,6 +41,8 @@ const { title, description, image } = Astro.props;
     <link rel="sitemap" href="/sitemap-index.xml" />
   </head>
   <body
+    itemscope
+    itemtype="https://schema.org/WebPage"
     class="leading-relaxed text-gray-600 dark:bg-gray-900 dark:text-gray-100"
   >
     <a
@@ -50,7 +53,12 @@ const { title, description, image } = Astro.props;
 
     <Header />
 
-    <main class="mx-auto max-w-7xl px-4 md:px-8" id="content">
+    <main
+      {...props}
+      class="mx-auto max-w-7xl px-4 md:px-8"
+      id="content"
+      itemprop="mainEntity"
+    >
       <slot />
     </main>
 

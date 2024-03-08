@@ -7,6 +7,11 @@ let { title } = Astro.props;
 ---
 
 <header class="py-8">
-  <h1 class="h1 mb-8">{title}</h1>
-  <p class="mb-6 text-lg md:mb-12 md:w-2/3 md:text-xl lg:w-1/2"><slot /></p>
+  <h1 class="h1 mb-8" itemprop="headline">{title}</h1>
+  <p
+    class="mb-6 text-lg md:mb-12 md:w-2/3 md:text-xl lg:w-1/2"
+    itemprop="abstract"
+  >
+    <slot />
+  </p>
 </header>

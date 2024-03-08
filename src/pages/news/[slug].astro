@@ -21,6 +21,8 @@ let { Content } = await entry.render();
   title={entry.data.title}
   description={entry.data.excerpt}
   image={entry.data.image?.src}
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
 >
   <Hero title={entry.data.title}>{entry.data.excerpt} </Hero>
 
@@ -35,6 +37,9 @@ let { Content } = await entry.render();
             width={1200}
             quality={80}
             height={800}
+            itemtype="https://schema.org/ImageObject"
+            itemscope
+            itemprop="thumbnail"
             class="mb-4 w-full rounded-xl object-cover object-center shadow-lg"
           />
 
@@ -65,6 +70,7 @@ let { Content } = await entry.render();
     }
 
     <div
+      itemprop="articleBody"
       class="prose max-w-none prose-a:rounded-sm prose-a:text-primary-900 prose-a:no-underline hover:prose-a:underline focus-visible:prose-a:outline focus-visible:prose-a:outline-2 focus-visible:prose-a:outline-offset-2 prose-img:rounded-xl prose-img:shadow-xl prose-video:w-full prose-video:rounded-xl prose-video:shadow-xl dark:text-gray-100 dark:prose-a:text-primary-200"
     >
       <Content />
@@ -86,6 +92,9 @@ let { Content } = await entry.render();
                 width={400}
                 height={350}
                 quality={80}
+                itemtype="https://schema.org/ImageObject"
+                itemscope
+                itemprop="image"
                 class="aspect-[4/3] object-cover shadow-lg transition-transform duration-300 group-hover:scale-110"
               />
             </a>
