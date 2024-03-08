@@ -3,7 +3,7 @@ import { Picture } from "astro:assets";
 ---
 
 <header
-  class="relative mx-auto flex max-w-7xl items-center justify-between px-4 py-4 before:absolute before:-top-1/2 before:bottom-32 before:right-0 before:-z-10 before:aspect-square before:w-48 before:rounded-full before:bg-purple-100 before:blur-3xl md:px-8 md:py-8"
+  class="relative mx-auto flex max-w-7xl items-center justify-between px-4 py-4 before:absolute before:-top-1/2 before:bottom-32 before:right-0 before:-z-10 before:aspect-square before:w-48 before:rounded-full before:bg-purple-100 before:blur-3xl md:px-8 md:py-8 dark:before:bg-purple-900"
 >
   <Picture
     src="https://ik.imagekit.io/6uqkzvybwk/regio-lions/logo.png?updatedAt=1707247965694"
@@ -23,7 +23,7 @@ import { Picture } from "astro:assets";
     aria-controls="menu"
     aria-expanded="false"
     data-action="toggle-menu"
-    class="z-20 rounded-sm text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900 md:hidden"
+    class="z-20 rounded-sm text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900 md:hidden dark:text-white dark:hover:text-primary-200 dark:focus-visible:text-primary-200 dark:focus-visible:outline-primary-200"
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -48,24 +48,24 @@ import { Picture } from "astro:assets";
 
   <nav
     aria-label="seitennavigation"
-    class="pointer-events-none fixed inset-0 z-10 flex h-screen w-full flex-col justify-center gap-8 bg-white p-12 text-xl opacity-0 transition-opacity md:pointer-events-auto md:static md:h-auto md:w-auto md:flex-row md:bg-transparent md:p-0 md:text-base md:opacity-100"
+    class="pointer-events-none fixed inset-0 z-10 flex h-screen w-full flex-col justify-center gap-8 bg-white p-12 text-xl opacity-0 transition-opacity md:pointer-events-auto md:static md:h-auto md:w-auto md:flex-row md:bg-transparent md:p-0 md:text-base md:opacity-100 dark:bg-gray-900 dark:md:bg-transparent"
     data-action="menu"
     id="menu"
   >
     <a
-      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
+      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900 dark:text-white dark:hover:text-primary-200 dark:focus-visible:text-primary-200 dark:focus-visible:outline-primary-200"
       href="/">Home</a
     >
     <a
-      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
+      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900 dark:text-white dark:hover:text-primary-200 dark:focus-visible:text-primary-200 dark:focus-visible:outline-primary-200"
       href="/news">News</a
     >
     <a
-      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
+      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900 dark:text-white dark:hover:text-primary-200 dark:focus-visible:text-primary-200 dark:focus-visible:outline-primary-200"
       href="/clubs">Clubs</a
     >
     <a
-      class="inline-flex items-center gap-x-2 rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
+      class="inline-flex items-center gap-x-2 rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900 dark:text-white dark:hover:text-primary-200 dark:focus-visible:text-primary-200 dark:focus-visible:outline-primary-200"
       href="https://www.3laenderlauf.org/"
       target="_blank"
       rel="noopener nofollow noreferrer"
@@ -76,7 +76,7 @@ import { Picture } from "astro:assets";
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="h-5 w-5 -translate-y-px text-gray-400"
+        class="h-5 w-5 -translate-y-px text-gray-400 dark:text-gray-200"
         aria-hidden="true"
       >
         <path
@@ -87,7 +87,7 @@ import { Picture } from "astro:assets";
       </svg></a
     >
     <a
-      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900"
+      class="rounded-sm font-medium text-gray-900 transition-colors hover:text-primary-900 focus-visible:text-primary-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-900 dark:text-white dark:hover:text-primary-200 dark:focus-visible:text-primary-200 dark:focus-visible:outline-primary-200"
       href="/kontakt"
       tabindex="0">Kontakt</a
     >
