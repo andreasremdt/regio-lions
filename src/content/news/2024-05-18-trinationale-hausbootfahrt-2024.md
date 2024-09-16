@@ -52,4 +52,6 @@ Der letzte Höhepunkt vor der Heimfahrt war eine Wasserschlacht bei 35° in pral
 
 Finanziert wird die trinationale Unternehmung zu etwa gleichen Teilen mit Einnahmen aus dem Festbetrieb beim Dreiländerlauf auf dem Basler Marktplatz am 26. Mai 2024 sowie einem Zuschuss aus dem Jugendfonds der Deutsch-Französisch-Schweizerischen Oberrheinkonferenz.
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pON1bhcQecw?si=udRMbwwCdTv4Um3b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 Die nächste Unternehmung mit Jugendlichen aus den drei Nachbarländern wird Ende Juli / Anfang August ein Sommercamp auf einem Bauernhof sein. Dieses findet traditionell in Huttwil im Emmental statt. Wir werden berichten.
